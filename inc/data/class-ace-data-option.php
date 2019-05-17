@@ -16,7 +16,7 @@ class AceDataOption extends AceDataCURDAbstract {
 		 * Get Option ID.
 		 * @var string
 		 */
-		public function setOptionId( string $option_id )
+		public function setOptionId $option_id )
 		{
 			if ( '' !== $option_id ) {
 				$this->option_id = $option_id;

@@ -24,7 +24,7 @@ class AceFrontendManager {
 		**/
 		public $classes = array();
 
-		public function getHTMLClasses( string $key )
+		public function getHTMLClasses $key )
 		{
 			if ( is_string( $key ) 
 				&& '' !== $key 

@@ -48,7 +48,7 @@ final class Ace {
 		 * @param string $key
 		 * @return mixed
 		 */
-		public function getThemeData( string $key )
+		public function getThemeData $key )
 		{
 			if ( ! is_string( $key ) 
 				|| ! isset( $this->themeData[ $key ] )
@@ -499,9 +499,9 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function sanitizeUniquePrefix( string $prefix, $sep = '_' )
+		public function sanitizeUniquePrefix( $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $prefix ) || empty( $prefix ) || ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Value or Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9]+/i', $sep, $prefix ) );
 		}
 
@@ -511,9 +511,9 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function sanitizeInputNamePrefix( string $prefix, $sep = '_' )
+		public function sanitizeInputNamePrefix( $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $prefix ) || empty( $prefix ) || ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Value or Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9\[\]]+/i', $sep, $prefix ) );
 		}
 
@@ -543,7 +543,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedName( string $name, $sep = '_' )
+		public function getPrefixedName( $name, $sep = '_' )
 		{
 
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
@@ -559,7 +559,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getThemePrefixedName( string $name, $sep = '_' )
+		public function getThemePrefixedName( $name, $sep = '_' )
 		{
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
 				ACE_THEME_NAME,
@@ -573,7 +573,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedOptionName( string $name, $sep = '_' )
+		public function getPrefixedOptionName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -587,7 +587,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedThemeOptionName( string $name, $sep = '_' )
+		public function getPrefixedThemeOptionName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( implode( $sep, array(
 				ACE_THEME_NAME,
@@ -601,7 +601,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedPostMetaName( string $name, $sep = '_' )
+		public function getPrefixedPostMetaName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( '_' . implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -615,7 +615,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedThemePostMetaName( string $name, $sep = '_' )
+		public function getPrefixedThemePostMetaName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( '_' . implode( $sep, array(
 				ACE_THEME_NAME,
@@ -629,7 +629,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedActionHook( string $name, $sep = '_' )
+		public function getPrefixedActionHook( $name, $sep = '_' )
 		{
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -644,7 +644,7 @@ final class Ace {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedFilterHook( string $name, $sep = '_' )
+		public function getPrefixedFilterHook( $name, $sep = '_' )
 		{
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
