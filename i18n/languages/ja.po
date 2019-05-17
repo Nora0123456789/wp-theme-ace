@@ -1,0 +1,3651 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ace\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2019-05-10 18:48+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Nora\n"
+"Language: ja_JA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: inc/3rd\n"
+"X-Poedit-SearchPathExcluded-3: assets/js/vue\n"
+"X-Poedit-SearchPathExcluded-4: assets/test\n"
+"X-Poedit-SearchPathExcluded-5: assets/webpack\n"
+"X-Poedit-SearchPathExcluded-6: bin\n"
+"X-Poedit-SearchPathExcluded-7: gitignores\n"
+"X-Poedit-SearchPathExcluded-8: memo\n"
+"X-Poedit-SearchPathExcluded-9: tests\n"
+"X-Poedit-SearchPathExcluded-10: placeholder\n"
+
+#: comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr "直接このページをロードしないでください。"
+
+#: comments.php:5
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"この投稿はパスワード保護されております。閲覧するするにはパスワードを入力して"
+"ください。"
+
+#: comments.php:14
+#, php-format
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] "%d件のコメント"
+
+#: comments.php:40
+#, php-format
+msgid "%d Ping"
+msgid_plural "%d Pings"
+msgstr[0] "%d件のピン"
+
+#: comments.php:63
+msgid "Leave a Comment"
+msgstr "コメントを残す"
+
+#: comments.php:66
+msgid "Name"
+msgstr "名前"
+
+#: comments.php:68
+msgid "E-mail Address ( Not Displayed on public )"
+msgstr "Eメールアドレス（公開されません）"
+
+#: comments.php:70
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: comments.php:73
+msgid "Comment"
+msgstr "コメント"
+
+#: functions.php:23
+msgid "Something Wrong."
+msgstr "なにかがうまくいかなかったようです。"
+
+#: functions.php:47
+#, php-format
+msgid "This theme requires PHP version 5.4.0. You are currently using %s."
+msgstr "このテーマはPHPバージョン5.4.0以上が必要です。現在%sを使用しています。"
+
+#: inc/abstract/class-ace-data-abstract.php:82
+#: inc/abstract/class-ace-data-crud-abstract.php:88
+msgid "Wrong ID."
+msgstr "誤ったIDです。"
+
+#: inc/abstract/class-ace-data-abstract.php:268
+msgid "Wrong key is set."
+msgstr "誤ったキーがセットされています。"
+
+#: inc/abstract/class-ace-data-abstract.php:272
+msgid "Value is not set."
+msgstr "値がセットされていません。"
+
+#: inc/abstract/class-ace-data-crud-abstract.php:68
+#: inc/abstract/class-ace-data-crud-abstract.php:71
+msgid "Failed to init Ace data."
+msgstr "エースのデータの初期化に失敗しました。"
+
+#: inc/abstract/class-ace-unique-abstract.php:32 inc/class-ace.php:260
+msgid "DO NOT Clone."
+msgstr ""
+
+#: inc/abstract/class-ace-unique-abstract.php:40 inc/class-ace.php:269
+msgid "DO NOT Unserialize"
+msgstr ""
+
+#: inc/admin/admin-page/class-ace-admin-menu-page.php:111
+msgid "Saved."
+msgstr "保存しました。"
+
+#: inc/admin/admin-page/class-ace-admin-menu-page.php:151
+msgid "No Posts"
+msgstr "投稿無し。"
+
+#: inc/admin/admin-page/view/admin-menu-page.php:10
+msgid "Ace"
+msgstr "Ace"
+
+#: inc/admin/admin-page/view/admin-menu-sections/tabs-section.php:6
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:4
+msgid "Setting Guide"
+msgstr "設定の案内"
+
+#: inc/admin/admin-page/view/admin-menu-sections/tabs-section.php:11
+msgid "Introduction to Ace+"
+msgstr "Ace+の紹介"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:4
+msgid "Dedicated Plugin Ace+"
+msgstr "専用プラグイン Ace+"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:9
+msgid "Custom Widget Areas"
+msgstr "カスタムウィジェットエリア"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:10
+msgid ""
+"Optional Widget Areas are prepared, which you can append as many as you want "
+"to place them in area holders like \"before main area\", \"after content\", "
+"\"in footer\"... in order to decorate parts of page."
+msgstr ""
+"「コンテンツエリア前」や「コンテンツ後」などのエリアホルダーに、自由に追加可"
+"能なオプショナルウィジェットエリアが用意されています。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:12
+msgid "Custom Widgets"
+msgstr "カスタムウィジェット"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:13
+msgid ""
+"Ace+ provide some original widgets like entries, author card, map, template."
+msgstr ""
+"Ace+は投稿リストや投稿者カードのようなオリジナルウィジェットを提供します。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:15
+msgid "Custom Blocks"
+msgstr "カスタムブロック"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:16
+msgid ""
+"Ace+ provide some original blocks for gutenberg in order to make contents "
+"easier."
+msgstr ""
+"Ace+はコンテンツ作成を簡単にするため、グーテンベルグ用のオリジナルブロックを"
+"提供します。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:18
+msgid "Custom Fonts"
+msgstr "カスタムフォント"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:19
+msgid ""
+"In addition to default fonts by Theme Ace, you can add any fonts by upload "
+"the file, or you can use Google Fonts. Appended fonts can be applied for "
+"font choices in theme customizer."
+msgstr ""
+"テーマAceによる標準フォントに加え、アップロードすることによりカスタムフォン"
+"ト、あるいはGoogle Fontsを利用することが可能です。追加されたフォントはテーマ"
+"カスタマイザーの選択肢に適用されます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:21
+msgid "Custom CSS"
+msgstr "カスタムCSS"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:22
+msgid ""
+"In addition to default Style by Theme Ace, you can add Style by upload the "
+"css file. In this way, you can maintain your own style with Ace easily."
+msgstr ""
+"テーマAceによる標準的なスタイルに加え、CSSファイルをアップロードすることによ"
+"りスタイルを追加することが可能です。この方法により自分のスタイルを簡単に簡単"
+"に管理できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:24
+msgid "Custom Post Types"
+msgstr "カスタム投稿タイプ"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:25
+msgid ""
+"Ace+ provide some original CPT like CTA, Slider and Template. And maybe "
+"others will appear in updates."
+msgstr ""
+"Ace+はCTA、スライダー、テンプレートのような投稿タイプが用意されています。また"
+"アップデートによりまた追加されるかもしれません。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:27
+msgid "Custom Menu"
+msgstr "カスタムメニュー"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:28
+msgid ""
+"Ace+ provide even menu styles. For now, you can setup submenu as slider with "
+"Thumbnail."
+msgstr ""
+"Ace+はメニューのスタイルも提供します。現在はサムネイル付きのスライダーサブメ"
+"ニューを設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/guide-to-ace-plus.php:33
+msgid "Detail"
+msgstr "詳細"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:11
+msgid "All settings by theme Ace are in theme customizer."
+msgstr "テーマAceによる設定は全てテーマカスタマイザーにあります。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:15
+msgid "You can modify following parts:"
+msgstr "次の部分を編集できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:19
+#: inc/theme-customizer/parts/layout.php:5
+msgid "Page Layout"
+msgstr "ページレイアウト"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:20
+msgid "You can set width for main content and both sidebars."
+msgstr "メインコンテンツと両サイドバーの横幅を設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:22
+#: inc/theme-customizer/parts/header.php:5
+msgid "Header"
+msgstr "ヘッダー"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:23
+msgid ""
+"You can set \"Layout\", \"Colors\", \"Fonts\", \"Edge\" and \"Contact Info\"."
+msgstr "「レイアウト」「色」「フォント」「コンタクト情報」を設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:25
+#: inc/theme-customizer/parts/main.php:5
+msgid "Main Area"
+msgstr "メインエリア"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:26
+msgid "You can set \"Colors\", \"Fonts\" and \"Edge\"."
+msgstr "「色」「フォント」「端」を設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:28
+msgid "Content Page"
+msgstr "コンテンツページ"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:29
+msgid "You can set \"Colors\" and \"Fonts\"."
+msgstr "「色」「フォント」を設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:31
+msgid "Archive Page"
+msgstr "アーカイブページ"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:32
+msgid "You can set \"Layout\", \"Colors\" and \"Fonts\"."
+msgstr "「レイアウト」「色」「フォント」を設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:34
+#: inc/theme-customizer/parts/footer.php:5
+msgid "Footer"
+msgstr "フッター"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:35
+msgid "You can set \"Layout\", \"Colors\", \"Fonts\" and \"Edge\"."
+msgstr "「レイアウト」「色」「フォント」「端」を設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:37
+msgid "Widget Areas"
+msgstr "ウィジェットエリア"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:38
+msgid "You can set styles for each widget area and the widgets."
+msgstr "ウィジェットエリアとそのウィジェットのスタイルを設定できます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:46
+msgid "Updates and Customizations"
+msgstr "更新情報とカスタマイズ"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:53
+msgid "Here is WP Works Blog. "
+msgstr "こちらはWPワークスのブログです。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:57
+msgid ""
+"It writes mainly about customizations, some tutorials and updates for "
+"Products by WP Works. "
+msgstr ""
+"WPワークスによるパッケージのカスタマイズやチュートリアル、更新情報などについ"
+"て書いています。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:58
+msgid ""
+"Please take it as some reference info when you want to make some "
+"customizations. "
+msgstr "カスタマイズを施す際などは参照としてご利用ください。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:62
+msgid ""
+"If you have any questions and error reports on products, they will be "
+"helpful and make products better. "
+msgstr ""
+"パッケージに関する質問やエラー報告がありましたら、それらはパッケージを改善す"
+"る助けになります。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:66
+msgid "You can report in WP forum or directly in WP Works. "
+msgstr "ワードプレスのフォーラムあるいはWPワークスに直接ご報告ください。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:72
+msgid "WP Works Blog"
+msgstr "WPワークスブログ"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:77
+msgid "About Child Theme"
+msgstr "子テーマについて"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:82
+msgid ""
+"In theme \"Ace\", template files are also placed in directory \"templates\". "
+msgstr ""
+"テーマ「Ace」では、テンプレートファイルがディレクトリ「templates」にもありま"
+"す。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:83
+msgid ""
+"When you want to make child theme and customize it, it is recommended to "
+"copy and modify them. "
+msgstr ""
+"子テーマを作ってカスタマイズする際は、コピーして編集することが推奨されます。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:84
+msgid ""
+"* As theme info writes, Ace includes Bootstrap as 3rd party library but "
+"actually it includes only \"bootstrap_reboot\". "
+msgstr ""
+"※ テーマ情報に書いてあるように、サードパーティとしてインクルードしている"
+"Bootstrapについてですが、実際は「bootstrap_reboot」のみのインクルードです。"
+
+#: inc/admin/admin-page/view/tab-menu-list/setting-guide.php:85
+msgid ""
+"So when you want to make a child theme or do some customization using "
+"bootstrap classes or its JavaScript, you have to include it by yourself. "
+msgstr ""
+"そのため、Bootstrapを使用して子テーマを作ったりカスタマイズしたい場合は、ご自"
+"身でインクルードする必要があります。"
+
+#: inc/class-ace.php:485
+msgid "Primary Navi Menu"
+msgstr "メインナビメニュー"
+
+#: inc/class-ace.php:486
+msgid "Footer Navi Menu"
+msgstr "フッターナビメニュー"
+
+#: inc/class-ace.php:487
+msgid "Mobile Navi Menu"
+msgstr "モバイルナビメニュー"
+
+#: inc/data/class-ace-data-html-class.php:122
+msgid "Wrong Params."
+msgstr "誤ったパラメータ"
+
+#: inc/data/class-ace-theme-mod-manager.php:420
+#: inc/data/class-ace-theme-mod-manager.php:589
+#: inc/data/class-ace-theme-mod-manager.php:604
+#: inc/data/class-ace-theme-mod-manager.php:672
+#: inc/theme-customizer/class-ace-theme-customizer.php:242
+#: inc/theme-customizer/parts/footer/layout.php:37
+msgid "Center"
+msgstr "真ん中"
+
+#: inc/data/class-ace-theme-mod-manager.php:421
+#: inc/data/class-ace-theme-mod-manager.php:605
+#: inc/data/class-ace-theme-mod-manager.php:673
+#: inc/theme-customizer/parts/footer/layout.php:36
+msgid "Left"
+msgstr "左"
+
+#: inc/data/class-ace-theme-mod-manager.php:422
+#: inc/data/class-ace-theme-mod-manager.php:606
+#: inc/data/class-ace-theme-mod-manager.php:674
+#: inc/theme-customizer/parts/footer/layout.php:38
+msgid "Right"
+msgstr "右"
+
+#: inc/data/class-ace-theme-mod-manager.php:436
+#: inc/data/class-ace-theme-mod-manager.php:440
+#: inc/data/class-ace-theme-mod-manager.php:686
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:742
+msgid "None"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:437
+msgid "Fade In Down from Above"
+msgstr "上からフェイドイン"
+
+#: inc/data/class-ace-theme-mod-manager.php:441
+msgid "Fade Out Up"
+msgstr "上にフェイドアウト"
+
+#: inc/data/class-ace-theme-mod-manager.php:455
+#: inc/theme-customizer/customizer-controls/customizer-font-selector/class/class-font-selector.php:59
+msgid "Default"
+msgstr "標準"
+
+#: inc/data/class-ace-theme-mod-manager.php:456
+msgid "sans-serif"
+msgstr "Sans-Serif"
+
+#: inc/data/class-ace-theme-mod-manager.php:457
+msgid "arial"
+msgstr "Arial"
+
+#: inc/data/class-ace-theme-mod-manager.php:458
+msgid "arial black"
+msgstr "Arial Black"
+
+#: inc/data/class-ace-theme-mod-manager.php:459
+msgid "arial narrow"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:460
+msgid "arial unicode ms"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:461
+msgid "Century Gothic"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:462
+msgid "Franklin Gothic Medium"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:463
+msgid "Gulim"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:464
+msgid "Dotum"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:465
+msgid "Haettenschweiler"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:466
+msgid "Impact"
+msgstr "Impact"
+
+#: inc/data/class-ace-theme-mod-manager.php:467
+msgid "Ludica Sans Unicode"
+msgstr "Lucida Sans Unicode"
+
+#: inc/data/class-ace-theme-mod-manager.php:468
+msgid "Microsoft Sans Serif"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:469
+msgid "MS Sans Serif"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:470
+msgid "MV Boil"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:471
+msgid "New Gulim"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:472
+msgid "Tahoma"
+msgstr "Tahoma"
+
+#: inc/data/class-ace-theme-mod-manager.php:473
+msgid "Trebuchet"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:474
+msgid "Verdana"
+msgstr "Verdana"
+
+#: inc/data/class-ace-theme-mod-manager.php:475
+msgid "serif"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:476
+msgid "Batang"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:477
+msgid "Book Antiqua"
+msgstr "Book Antiqua"
+
+#: inc/data/class-ace-theme-mod-manager.php:478
+msgid "Bookman Old Style"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:479
+msgid "Century"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:480
+msgid "Estrangelo Edessa"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:481
+msgid "Garamond"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:482
+msgid "Gautami"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:483
+msgid "Georgia"
+msgstr "Georgia"
+
+#: inc/data/class-ace-theme-mod-manager.php:484
+msgid "Gungsuh"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:485
+msgid "Latha"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:486
+msgid "Mangal"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:487
+msgid "MS Serif"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:488
+msgid "PMingLiU"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:489
+msgid "Palatino Linotype"
+msgstr "Palatino Linotype"
+
+#: inc/data/class-ace-theme-mod-manager.php:490
+msgid "Raavi"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:491
+msgid "Roman"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:492
+msgid "Shruti"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:493
+msgid "Sylfaen"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:494
+msgid "Times New Roman"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:495
+msgid "Tunga"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:496
+msgid "Monospace"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:497
+msgid "BatangChe"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:498
+msgid "Courier"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:499
+msgid "Courier New"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:500
+msgid "DotumChe"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:501
+msgid "GlimChe"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:502
+msgid "GungsuhChe"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:503
+msgid "HG Gyoshotai"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:504
+msgid "Lucida Console"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:505
+msgid "MingLiU"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:506
+msgid "OCRB"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:507
+msgid "SimHei"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:508
+msgid "SimSun"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:509
+msgid "Small Fonts"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:510
+msgid "Terminal"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:511
+msgid "Fantasy"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:512
+msgid "alba"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:513
+msgid "alba matter"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:514
+msgid "alba super"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:515
+msgid "baby kruffy"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:516
+msgid "Chick"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:517
+msgid "Croobie"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:518
+msgid "Fat"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:519
+msgid "Freshbot"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:520
+msgid "Frosty"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:521
+msgid "GlooGun"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:522
+msgid "Jokewood"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:523
+msgid "Modern"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:524
+msgid "Monotype Corsiva"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:525
+msgid "Poornut"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:526
+msgid "Pussycat Snickers"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:527
+msgid "Weltron Urban"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:528
+msgid "Cursive"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:529
+msgid "Comic Sans MS"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:530
+msgid "HGP Gyoshotai"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:531
+msgid "HG Seikaishotai-PRO"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:532
+msgid "Jenkins v2.0"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:533
+msgid "Script"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:535
+msgid "MS UI Gothic"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:536
+msgid "MS PGothic"
+msgstr "”MS PGothic”, ”ＭＳ Ｐゴシック”"
+
+#: inc/data/class-ace-theme-mod-manager.php:537
+msgid "MS Gothic"
+msgstr "”MS Gothic”, ”ＭＳ ゴシック”"
+
+#: inc/data/class-ace-theme-mod-manager.php:538
+msgid "MS PMincho"
+msgstr "”MS PMincho”, ”ＭＳ Ｐ明朝”"
+
+#: inc/data/class-ace-theme-mod-manager.php:539
+msgid "MS Mincho"
+msgstr "”MS Mincho”, ”ＭＳ 明朝”"
+
+#: inc/data/class-ace-theme-mod-manager.php:540
+msgid "Meiryo"
+msgstr "”Meiryo”, ”メイリオ”"
+
+#: inc/data/class-ace-theme-mod-manager.php:541
+msgid "Meiryo UI"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:542
+msgid "Yu Gothic"
+msgstr "”Yu Gothic”, ”游ゴシック”"
+
+#: inc/data/class-ace-theme-mod-manager.php:543
+msgid "Yu Mincho"
+msgstr "”Yu Mincho”, ”游明朝”"
+
+#: inc/data/class-ace-theme-mod-manager.php:544
+msgid "Hiragino Kaku Gothic Pro"
+msgstr "”Hiragino Kaku Gothic Pro”, ”ヒラギノ角ゴ Pro W3”"
+
+#: inc/data/class-ace-theme-mod-manager.php:545
+msgid "\"HiraKakuProN-W3\", \"Hiragino Kaku Gothic ProN\""
+msgstr "”HiraKakuProN-W3”, ”Hiragino Kaku Gothic ProN”, ”ヒラギノ角ゴ ProN W3”"
+
+#: inc/data/class-ace-theme-mod-manager.php:546
+msgid "HiraKakuPro-W6"
+msgstr "”HiraKakuPro-W6”, ”ヒラギノ角ゴ Pro W6”"
+
+#: inc/data/class-ace-theme-mod-manager.php:547
+msgid "\"HiraKakuProN-W6\", \"HiraKakuProN-W6\""
+msgstr "”HiraKakuProN-W6”, ”HiraKakuProN-W6”, ”ヒラギノ角ゴ ProN W6”"
+
+#: inc/data/class-ace-theme-mod-manager.php:548
+msgid "Hiragino Kaku Gothic Std"
+msgstr "”Hiragino Kaku Gothic Std”, ”ヒラギノ角ゴ Std W8”"
+
+#: inc/data/class-ace-theme-mod-manager.php:549
+msgid "Hiragino Kaku Gothic StdN"
+msgstr "”Hiragino Kaku Gothic StdN”, ”ヒラギノ角ゴ StdN W8”"
+
+#: inc/data/class-ace-theme-mod-manager.php:550
+msgid "Hiragino Maru Gothic Pro"
+msgstr "”Hiragino Maru Gothic Pro”, ”ヒラギノ丸ゴ Pro W4”"
+
+#: inc/data/class-ace-theme-mod-manager.php:551
+msgid "Hiragino Maru Gothic ProN"
+msgstr "”Hiragino Maru Gothic ProN”, ”ヒラギノ丸ゴ ProN W4”"
+
+#: inc/data/class-ace-theme-mod-manager.php:552
+msgid "Hiragino Mincho Pro"
+msgstr "”Hiragino Mincho Pro”, ”ヒラギノ明朝 Pro W3”"
+
+#: inc/data/class-ace-theme-mod-manager.php:553
+msgid "\"HiraMinProN-W3\", \"Hiragino Mincho ProN\""
+msgstr "”HiraMinProN-W3”, ”Hiragino Mincho ProN”, ”ヒラギノ明朝 ProN W3”"
+
+#: inc/data/class-ace-theme-mod-manager.php:554
+msgid "HiraMinPro-W6"
+msgstr "”HiraMinPro-W6”, ”ヒラギノ明朝 Pro W6”"
+
+#: inc/data/class-ace-theme-mod-manager.php:555
+msgid "\"HiraMinProN-W6\", \"HiraMinProN-W6\""
+msgstr "”HiraMinProN-W6”, ”HiraMinProN-W6”, ”ヒラギノ明朝 ProN W6”"
+
+#: inc/data/class-ace-theme-mod-manager.php:556
+msgid "YuGothic"
+msgstr "”YuGothic”, ”游ゴシック体”"
+
+#: inc/data/class-ace-theme-mod-manager.php:557
+msgid "YuMincho"
+msgstr "”YuMincho”, ”游明朝体”"
+
+#: inc/data/class-ace-theme-mod-manager.php:558
+msgid "Osaka"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:559
+msgid "Osaka-Mono"
+msgstr "”Osaka-Mono”, ”Osaka－等幅”"
+
+#: inc/data/class-ace-theme-mod-manager.php:560
+msgid "Droid Sans"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:561
+msgid "Roboto"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:590
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:817
+msgid "Top"
+msgstr "上"
+
+#: inc/data/class-ace-theme-mod-manager.php:591
+msgid "Bottom"
+msgstr "下"
+
+#: inc/data/class-ace-theme-mod-manager.php:619
+msgid "No Repeat"
+msgstr "リピート無し"
+
+#: inc/data/class-ace-theme-mod-manager.php:620
+msgid "Repeat"
+msgstr "リピート"
+
+#: inc/data/class-ace-theme-mod-manager.php:621
+msgid "Horizontal Repeat"
+msgstr "横にリピート"
+
+#: inc/data/class-ace-theme-mod-manager.php:622
+msgid "Vertical Repeat"
+msgstr "縦にリピート"
+
+#: inc/data/class-ace-theme-mod-manager.php:635
+msgid "Scroll"
+msgstr "スクロール"
+
+#: inc/data/class-ace-theme-mod-manager.php:636
+msgid "Fixed"
+msgstr "固定"
+
+#: inc/data/class-ace-theme-mod-manager.php:650
+msgid "Not Display"
+msgstr "非表示"
+
+#: inc/data/class-ace-theme-mod-manager.php:651
+msgid "All Right Reserved"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:652
+msgid "CC-BY"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:653
+msgid "CC-BY-SA"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:654
+msgid "CC-BY-ND"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:655
+msgid "CC-BY-NC"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:656
+msgid "CC-BY-NC-SA"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:657
+msgid "CC-BY-NC-ND"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:658
+msgid "CC0"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:659
+msgid "Public Domain"
+msgstr ""
+
+#: inc/data/class-ace-theme-mod-manager.php:687
+msgid "Thick Border"
+msgstr "有境界線"
+
+#: inc/data/class-ace-theme-mod-manager.php:688
+msgid "Two Tone"
+msgstr "ツートーン"
+
+#: inc/frontend/class-ace-frontend-rendering-manager.php:295
+msgid "Callable methods are not set."
+msgstr "コール可能なメソッドがセットされていません。"
+
+#: inc/frontend/class-ace-frontend-rendering-manager.php:301
+#, php-format
+msgid "%1$s::%2$s is NOT callable!"
+msgstr "%1$s::%2$sはコールできません。"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:88
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:103
+#: template/archive-3-cols.php:20 template/archive-slider.php:23
+#: template/archive.php:22 template/home.php:16
+msgid "No Articles."
+msgstr "記事がありません。"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:89
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:104
+#: template/archive-3-cols.php:21 template/archive-slider.php:24
+#: template/archive.php:23 template/content.php:68 template/home.php:17
+msgid "Please try to search for the page with keywords."
+msgstr "キーワードでページを検索してみてください。"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:155
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:160
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:537
+#, php-format
+msgid "No Titles - %s"
+msgstr "タイトル無し - %s"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:233
+#: template/archive/article-3-cols.php:77 template/archive/article-card.php:97
+#: template/archive/article-slider.php:62 template/archive/meta.php:14
+#: template/singular/tax-post.php:45 template/singular/tax.php:44
+msgctxt "Date Format"
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:260
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:263
+msgid "Post Author"
+msgstr "著者"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:325
+#, php-format
+msgid "%1$d Posts"
+msgstr "%1$d件の投稿"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:372
+#: template/archive/article-3-cols.php:19 template/archive/article-card.php:18
+#: template/archive/article-slider.php:19 template/singular/tax-post.php:16
+#: template/singular/tax.php:9 template/singular/title.php:4
+msgid "( No Title )"
+msgstr "（タイトル無し）"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:430
+msgid "Flip"
+msgstr ""
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:475
+#: inc/function/functions.php:229
+msgid "&laquo; Previous"
+msgstr "&laquo; 前"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:476
+#: inc/function/functions.php:230
+msgid "Next &raquo;"
+msgstr "次 &raquo;"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:480
+#, php-format
+msgid "Page: %1$d of %2$d"
+msgstr "ページ: %1$d / %2$d"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:484
+msgid "To Prev"
+msgstr "前へ"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:485
+msgid "To Next"
+msgstr "次へ"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:759
+msgctxt "in Footer"
+msgid "Theme"
+msgstr "テーマ"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:809
+#: inc/method/class-ace-rendering-methods.php:87 searchform.php:10
+#: searchform.php:12
+msgid "Search"
+msgstr "検索"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:813
+#: template/header/breadcrumb.php:12
+msgid "Home"
+msgstr "ホーム"
+
+#: inc/frontend/class-ace-frontend-rendering-parts-methods.php:821
+msgid "Widgets"
+msgstr "ウィジェット"
+
+#: inc/function/functions.php:152
+msgid "* Waiting for being approved *"
+msgstr "* 承認待ち *"
+
+#: inc/function/functions.php:165 inc/function/functions.php:259
+#: inc/theme-customizer/customizer-controls/customizer-page-editor/class/class-customizer-page-editor.php:54
+msgid "Edit"
+msgstr "編集"
+
+#: inc/function/functions.php:233
+#, php-format
+msgid "Comment Page: %1$d of %2$d"
+msgstr "コメントページ: %1$d / %2$d"
+
+#: inc/method/class-ace-data-methods.php:143
+#, php-format
+msgid ""
+"Copyright &copy; <span id=\"copyright-year\">%1$d</span> %2$s All Rights "
+"Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:146
+#, php-format
+msgid "CC-BY %s Some Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:149
+#, php-format
+msgid "CC-BY-SA %s Some Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:152
+#, php-format
+msgid "CC-BY-ND %s Some Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:155
+#, php-format
+msgid "CC-BY-NC %s Some Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:158
+#, php-format
+msgid "CC-BY-NC-SA %s Some Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:161
+#, php-format
+msgid "CC-BY-NC-ND %s Some Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:164
+#, php-format
+msgid "CC0 %s No Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-data-methods.php:167
+#, php-format
+msgid "Public Domain %s No Rights Reserved."
+msgstr ""
+
+#: inc/method/class-ace-rendering-methods.php:85
+msgid "Keyword"
+msgstr "キーワード"
+
+#: inc/method/class-ace-rendering-methods.php:439
+msgid "Click to edit this."
+msgstr "編集"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:227
+msgid "Sliding Item Type"
+msgstr "スライドアイテムのタイプ"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:228
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:429
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:448
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:559
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:577
+#: inc/theme-customizer/parts/archive/font.php:68
+#: inc/theme-customizer/parts/design/color.php:31
+#: inc/theme-customizer/parts/footer/color.php:31
+#: inc/theme-customizer/parts/footer/font.php:19
+#: inc/theme-customizer/parts/main/color.php:45
+msgid "Text"
+msgstr "テキスト"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:229
+msgid "Download"
+msgstr "ダウンロード"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:230
+msgid "Close"
+msgstr "閉じる"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:231
+msgid "Sliding Images"
+msgstr "スライドイメージ"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:232
+#, php-format
+msgid "Item %d"
+msgstr "アイテム %d"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:233
+msgid "Select"
+msgstr "選択"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:235
+msgid "Top Left"
+msgstr "トップ左"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:236
+msgid "Top Center"
+msgstr "トップ真ん中"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:237
+msgid "Top Right"
+msgstr "トップ右"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:238
+msgid "Bottom Left"
+msgstr "左下"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:239
+msgid "Bottom Center"
+msgstr "真ん中下"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:240
+msgid "Bottom Right"
+msgstr "右下"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:241
+msgid "Center Left"
+msgstr "真ん中左"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:243
+msgid "CenterRight"
+msgstr "真ん中右"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:245
+#, php-format
+msgid "Item Content Text %d"
+msgstr "アイテムテキスト %d"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:246
+#, php-format
+msgid "Position %d"
+msgstr "位置 %d"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:247
+#, php-format
+msgid "Text Color %d"
+msgstr "テキスト色 %d"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:248
+#, php-format
+msgid "Background Color %d"
+msgstr "背景色 %d"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:250
+msgid "Mobile Sidebar"
+msgstr "モバイルサイドバー"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:251
+msgid "Before Content Area"
+msgstr "コンテンツエリア前"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:252
+msgid "Before the Content"
+msgstr "コンテンツ前"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:253
+msgid "At the Beginning of the Content"
+msgstr "コンテンツの開始位置"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:254
+msgid "Before the First H2 tag of the Content"
+msgstr "最初のH2タグの前"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:255
+msgid "At the End of the Content"
+msgstr "コンテンツの最後"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:256
+msgid "After the Content"
+msgstr "コンテンツの後"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:257
+msgid "After Content Area"
+msgstr "コンテンツエリアの後"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:258
+msgid "In the Footer"
+msgstr "フッター内"
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:260
+#, php-format
+msgid ""
+"Copyright © <span id=\"copyright-year\">%1$d</span> <span class=\"ace-footer-"
+"site-name\">%2$s</span> All Rights Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:261
+#, php-format
+msgid ""
+"CC-BY <span class=\"ace-footer-site-name\">%1$s</span> Some Rights Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:262
+#, php-format
+msgid ""
+"CC-BY-SA <span class=\"ace-footer-site-name\">%1$s</span> Some Rights "
+"Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:263
+#, php-format
+msgid ""
+"CC-BY-ND <span class=\"ace-footer-site-name\">%1$s</span> Some Rights "
+"Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:264
+#, php-format
+msgid ""
+"CC-BY-NC <span class=\"ace-footer-site-name\">%1$s</span> Some Rights "
+"Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:265
+#, php-format
+msgid ""
+"CC-BY-NC-SA <span class=\"ace-footer-site-name\">%1$s</span> Some Rights "
+"Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:266
+#, php-format
+msgid ""
+"CC-BY-NC-ND <span class=\"ace-footer-site-name\">%1$s</span> Some Rights "
+"Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:267
+#, php-format
+msgid ""
+"CC0 <span class=\"ace-footer-site-name\">%1$s</span> No Rights Reserved."
+msgstr ""
+
+#: inc/theme-customizer/class-ace-theme-customizer.php:268
+#, php-format
+msgid ""
+"Public Domain <span class=\"ace-footer-site-name\">%1$s</span> No Rights "
+"Reserved."
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-font-selector/class/class-font-selector.php:65
+msgid "Standard Fonts"
+msgstr "標準フォント"
+
+#: inc/theme-customizer/customizer-controls/customizer-font-selector/class/class-font-selector.php:80
+msgid "Google Fonts"
+msgstr "Google Fonts"
+
+#: inc/theme-customizer/customizer-controls/customizer-page-editor/customizer-page-editor.php:30
+msgid "Save and close"
+msgstr "保存と"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:160
+msgid "Add new field"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:165
+msgid "Customizer Repeater"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:390
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:401
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:521
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:531
+msgid "Color"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:411
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:541
+#: inc/theme-customizer/parts/archive/font.php:36
+#: inc/theme-customizer/parts/singular/font.php:30
+msgid "Title"
+msgstr "タイトル"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:420
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:550
+msgid "Subtitle"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:438
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:457
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:568
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:586
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:782
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:810
+msgid "Link"
+msgstr "リンク"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:467
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:595
+msgid "Shortcode"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:492
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:607
+msgid "Delete field"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:679
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:740
+msgid "Icon"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:685
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:761
+#, php-format
+msgid ""
+"Note: Some icons may not be displayed here. You can see the full list of "
+"icons at %1$s."
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:686
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:762
+msgid "http://fontawesome.io/icons/"
+msgstr ""
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:721
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:741
+msgid "Image"
+msgstr "画像"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:724
+msgid "Upload Image"
+msgstr "イメージをアップロード"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:737
+msgid "Image type"
+msgstr "イメージタイプ"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:756
+msgid "Social icons"
+msgstr "ソーシャルアイコン"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:785
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:827
+msgid "Remove Icon"
+msgstr "アイコンを削除"
+
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:790
+#: inc/theme-customizer/customizer-controls/customizer-repeater/class/class-customizer-repeater.php:834
+msgid "Add Icon"
+msgstr "アイコンを追加"
+
+#: inc/theme-customizer/parts/ace-plus.php:12
+msgid "Plugin Ace+"
+msgstr "プラグイン Ace+"
+
+#: inc/theme-customizer/parts/ace-plus.php:13
+msgid "Features?"
+msgstr "特徴は？"
+
+#: inc/theme-customizer/parts/archive.php:5
+msgid "Archive"
+msgstr "アーカイブ"
+
+#: inc/theme-customizer/parts/archive.php:11
+#: inc/theme-customizer/parts/design.php:11
+#: inc/theme-customizer/parts/footer.php:11
+#: inc/theme-customizer/parts/main.php:11
+msgid "General"
+msgstr "一般"
+
+#: inc/theme-customizer/parts/archive/color.php:4
+#: inc/theme-customizer/parts/design/color.php:5
+#: inc/theme-customizer/parts/footer/color.php:4
+#: inc/theme-customizer/parts/header/color.php:5
+#: inc/theme-customizer/parts/main/color.php:5
+#: inc/theme-customizer/parts/singular.php:11
+msgid "Colors"
+msgstr "色"
+
+#: inc/theme-customizer/parts/archive/color.php:16
+msgid "Archive Title"
+msgstr "アーカイブタイトル"
+
+#: inc/theme-customizer/parts/archive/color.php:31
+msgid "Archive Title Background"
+msgstr "アーカイブタイトル背景"
+
+#: inc/theme-customizer/parts/archive/color.php:46
+#: inc/theme-customizer/parts/design/color.php:17
+#: inc/theme-customizer/parts/footer/color.php:16
+#: inc/theme-customizer/parts/header/color.php:17
+#: inc/theme-customizer/parts/main/color.php:31
+msgid "Background"
+msgstr "背景"
+
+#: inc/theme-customizer/parts/archive/color.php:61
+#: inc/theme-customizer/parts/archive/font.php:52
+msgid "Article Title"
+msgstr "記事タイトル"
+
+#: inc/theme-customizer/parts/archive/color.php:76
+msgid "Article Text"
+msgstr "記事テキスト"
+
+#: inc/theme-customizer/parts/archive/font.php:4
+#: inc/theme-customizer/parts/design/font.php:6
+#: inc/theme-customizer/parts/footer/font.php:4
+#: inc/theme-customizer/parts/header/font.php:4
+#: inc/theme-customizer/parts/main/font.php:4
+#: inc/theme-customizer/parts/singular.php:17
+msgid "Fonts"
+msgstr "フォント"
+
+#: inc/theme-customizer/parts/archive/font.php:20
+#: inc/theme-customizer/parts/singular/font.php:14
+msgid "Basic"
+msgstr "基本"
+
+#: inc/theme-customizer/parts/archive/layout.php:7
+#: inc/theme-customizer/parts/footer/layout.php:4
+#: inc/theme-customizer/parts/header/layout.php:4
+msgid "Layout"
+msgstr "レイアウト"
+
+#: inc/theme-customizer/parts/archive/layout.php:22
+msgid "Article Type"
+msgstr "記事タイプ"
+
+#: inc/theme-customizer/parts/archive/layout.php:25
+msgid "Card"
+msgstr "カード"
+
+#: inc/theme-customizer/parts/archive/layout.php:26
+msgid "3 Cols"
+msgstr "３カラム"
+
+#: inc/theme-customizer/parts/design.php:5
+msgid "Page Design"
+msgstr "ページデザイン"
+
+#: inc/theme-customizer/parts/design/color.php:45
+msgid "Text Link"
+msgstr "テキストリンク"
+
+#: inc/theme-customizer/parts/design/font.php:21
+#: inc/theme-customizer/parts/main/font.php:20
+msgid "Basic Font Family"
+msgstr "基本フォントファミリー"
+
+#: inc/theme-customizer/parts/footer/color.php:46
+#: inc/theme-customizer/parts/main/color.php:59
+msgid "Link Text"
+msgstr "リンクテキスト"
+
+#: inc/theme-customizer/parts/footer/color.php:61
+msgid "Nav Menu Text"
+msgstr "ナビメニューテキスト"
+
+#: inc/theme-customizer/parts/footer/edge.php:5
+#: inc/theme-customizer/parts/header/edge.php:5
+#: inc/theme-customizer/parts/main/edge.php:5
+msgid "Edge"
+msgstr "端"
+
+#: inc/theme-customizer/parts/footer/edge.php:20
+msgid "Footer Edge Type"
+msgstr "フッターの端のタイプ"
+
+#: inc/theme-customizer/parts/footer/edge.php:33
+#: inc/theme-customizer/parts/main/edge.php:33
+msgid "Layered Color"
+msgstr "レイヤード色"
+
+#: inc/theme-customizer/parts/footer/font.php:35
+#: inc/theme-customizer/parts/header/color.php:92
+#: inc/theme-customizer/parts/header/font.php:68
+#: template/nav-menus/nav-menu.php:118
+msgid "Nav Menu"
+msgstr "ナビメニュー"
+
+#: inc/theme-customizer/parts/footer/layout.php:18
+msgid "Hide All Footer Parts."
+msgstr "フッター部分を全て隠す"
+
+#: inc/theme-customizer/parts/footer/layout.php:19
+msgid ""
+"Maybe you want to render content by using widget areas, child theme or your "
+"own methods."
+msgstr "ウィジェットエリアや子テーマ、独自の方法によって出力できます。"
+
+#: inc/theme-customizer/parts/footer/layout.php:33
+msgid "Footer Text Align."
+msgstr "フッターテキストの配置"
+
+#: inc/theme-customizer/parts/footer/layout.php:52
+msgid "Hide Site Name Description"
+msgstr "サイトの名前と詳細を隠す"
+
+#: inc/theme-customizer/parts/footer/layout.php:67
+msgid "Year for Copyright"
+msgstr "コピーライトの年"
+
+#: inc/theme-customizer/parts/footer/layout.php:68
+msgid ""
+"Please enter the year of beginning of the website. This number is used for "
+"copyright section displayed at the bottom."
+msgstr ""
+
+#: inc/theme-customizer/parts/footer/layout.php:82
+msgid "Displayed License Type"
+msgstr "ライセンス表示"
+
+#: inc/theme-customizer/parts/footer/layout.php:97
+msgid "Hide Theme Name"
+msgstr "テーマを隠す"
+
+#: inc/theme-customizer/parts/footer/layout.php:111
+msgid "Custom Site Info"
+msgstr "サイトの情報"
+
+#: inc/theme-customizer/parts/header.php:6
+msgid "Header Section "
+msgstr "ヘッダーセクション"
+
+#: inc/theme-customizer/parts/header.php:11
+msgid "General Style"
+msgstr "一般スタイル"
+
+#: inc/theme-customizer/parts/header/color.php:32
+msgid "Background of Fixed Part"
+msgstr "固定部分の背景"
+
+#: inc/theme-customizer/parts/header/color.php:47
+#: inc/theme-customizer/parts/header/font.php:20
+msgid "Site Name"
+msgstr "サイト名"
+
+#: inc/theme-customizer/parts/header/color.php:62
+#: inc/theme-customizer/parts/header/font.php:36
+msgid "Site Description"
+msgstr "サイト詳細"
+
+#: inc/theme-customizer/parts/header/color.php:77
+msgid "Breadcrumb Text"
+msgstr "パンくずテキスト"
+
+#: inc/theme-customizer/parts/header/color.php:107
+msgid "Nav Menu Hover"
+msgstr "ナビメニューのホバー"
+
+#: inc/theme-customizer/parts/header/contact-info.php:5
+msgid "Contact Info"
+msgstr "コンタクト情報"
+
+#: inc/theme-customizer/parts/header/contact-info.php:20
+msgid "Header Contact Info Display"
+msgstr "ヘッダーのコンタクト情報表示"
+
+#: inc/theme-customizer/parts/header/contact-info.php:21
+msgid ""
+"Contact Info will be placed in the same line as the site name on header. So "
+"navi menu will be placed below that with this even though the header layout "
+"type is flex."
+msgstr ""
+"コンタクト情報はヘッダーのサイト名と同列に配置されます。ヘッダーのレイアウト"
+"がフレックスでも、コンタクト情報が表示される場合、ナビメニューはその下に配置"
+"されます。"
+
+#: inc/theme-customizer/parts/header/contact-info.php:36
+msgid "Contact Phone Number"
+msgstr "電話番号"
+
+#: inc/theme-customizer/parts/header/contact-info.php:50
+msgid "Message above Number"
+msgstr "番号の上のメッセージ"
+
+#: inc/theme-customizer/parts/header/contact-info.php:64
+msgid "Message below Number"
+msgstr "番号の下のメッセージ"
+
+#: inc/theme-customizer/parts/header/edge.php:20
+msgid "Header Edge Type"
+msgstr "ヘッダー端タイプ"
+
+#: inc/theme-customizer/parts/header/edge.php:33
+msgid "A Point Color for Edge"
+msgstr "エッジ用のポイント色"
+
+#: inc/theme-customizer/parts/header/font.php:52
+msgid "Breadcrumb"
+msgstr "パンくず"
+
+#: inc/theme-customizer/parts/header/layout.php:19
+#: inc/theme-customizer/parts/header/layout.php:20
+msgid "Header Style"
+msgstr "ヘッダーのスタイル"
+
+#: inc/theme-customizer/parts/header/layout.php:23
+msgid "Plain"
+msgstr ""
+
+#: inc/theme-customizer/parts/header/layout.php:40
+msgid "Header Layout"
+msgstr "ヘッダーのレイアウト"
+
+#: inc/theme-customizer/parts/header/layout.php:41
+msgid "Header Layout for Fixed Part"
+msgstr "固定部分のヘッダーのレイアウト"
+
+#: inc/theme-customizer/parts/header/layout.php:44
+msgid "Vertical"
+msgstr ""
+
+#: inc/theme-customizer/parts/header/layout.php:45
+msgid "Flex"
+msgstr "フレックス"
+
+#: inc/theme-customizer/parts/header/layout.php:46
+msgid "Fixed on Left"
+msgstr "左に固定"
+
+#: inc/theme-customizer/parts/header/layout.php:61
+msgid "Fix to top when scrolling"
+msgstr "スクロール時に固定"
+
+#: inc/theme-customizer/parts/header/layout.php:62
+msgid "Fix to top when scrolling?"
+msgstr "スクロール時に固定しますか？"
+
+#: inc/theme-customizer/parts/layout/general.php:4
+msgid "Page Layout General"
+msgstr "ページレイアウト一般"
+
+#: inc/theme-customizer/parts/layout/general.php:11
+msgid "Column Left Container"
+msgstr "左カラムのコンテナ"
+
+#: inc/theme-customizer/parts/layout/general.php:14
+msgid "Main Content"
+msgstr "メインコンテンツ"
+
+#: inc/theme-customizer/parts/layout/general.php:17
+msgid "Column Right Container"
+msgstr "右カラムのコンテナ"
+
+#: inc/theme-customizer/parts/layout/general.php:38
+#, php-format
+msgid "Width of %s"
+msgstr "%sの横幅"
+
+#: inc/theme-customizer/parts/main/color.php:17
+msgid "Area Background"
+msgstr "エリア背景"
+
+#: inc/theme-customizer/parts/main/edge.php:20
+msgid "Edge Type"
+msgstr "端のタイプ"
+
+#: inc/theme-customizer/parts/singular.php:5
+msgid "Singular"
+msgstr "コンテンツページ"
+
+#: inc/theme-customizer/parts/singular.php:6
+msgid "Theme Mods for Singular Page."
+msgstr "コンテンツページ用のカスタマイズ"
+
+#: inc/theme-customizer/parts/singular.php:25
+msgid "H1"
+msgstr "見出し１"
+
+#: inc/theme-customizer/parts/singular.php:26
+msgid "H2"
+msgstr "見出し２"
+
+#: inc/theme-customizer/parts/singular.php:27
+msgid "H3"
+msgstr "見出し３"
+
+#: inc/theme-customizer/parts/singular.php:28
+msgid "H4"
+msgstr "見出し４"
+
+#: inc/theme-customizer/parts/singular.php:29
+msgid "H5"
+msgstr "見出し５"
+
+#: inc/theme-customizer/parts/singular.php:30
+msgid "H6"
+msgstr "見出し６"
+
+#: inc/theme-customizer/parts/singular.php:31
+msgid "P"
+msgstr "段落"
+
+#: inc/theme-customizer/parts/singular.php:32
+msgid "Table"
+msgstr "テーブル"
+
+#: inc/theme-customizer/parts/singular.php:33
+msgid "List"
+msgstr "リスト"
+
+#: inc/theme-customizer/parts/singular/color.php:10
+msgid "Title Background"
+msgstr "タイトル背景"
+
+#: inc/theme-customizer/parts/singular/color.php:25
+msgid "Title Text"
+msgstr "タイトルテキスト"
+
+#: inc/theme-customizer/parts/singular/text.php:6
+#, php-format
+msgid "%s Color"
+msgstr "%sの色"
+
+#: inc/theme-customizer/parts/singular/text.php:23
+#, php-format
+msgid "%s Font Family"
+msgstr "%sのフォントファミリー"
+
+#: inc/theme-customizer/parts/swa.php:15
+msgid "Standard Widget Areas"
+msgstr "標準ウィジェットエリア"
+
+#: inc/theme-customizer/parts/swa/area.php:50
+msgid "Border for Each Item"
+msgstr "各アイテムの境界"
+
+#: inc/theme-customizer/parts/swa/area.php:65
+msgid "Padding"
+msgstr "パッド"
+
+#: inc/theme-customizer/parts/swa/area.php:87
+msgid "Background Color of Widget Item"
+msgstr "ウィジェットアイテムの背景色"
+
+#: inc/theme-customizer/parts/swa/area.php:105
+msgid "Enter Animation for Widget"
+msgstr "ウィジェットの表示アニメーション"
+
+#: inc/theme-customizer/parts/swa/area.php:121
+msgid "Hide Animation for Widget"
+msgstr "ウィジェットの非表示アニメーション"
+
+#: inc/theme-customizer/parts/swa/area.php:138
+msgid "Space between widgets"
+msgstr "ウィジェット間の空白"
+
+#: inc/theme-customizer/parts/swa/area.php:162
+msgid "Title Font Family"
+msgstr "タイトルのフォントファミリー"
+
+#: inc/theme-customizer/parts/swa/area.php:175
+msgid "Title Color"
+msgstr "タイトル色"
+
+#: inc/theme-customizer/parts/swa/area.php:192
+msgid "Title Text Align"
+msgstr "タイトルテキストの文字寄せ"
+
+#: inc/theme-customizer/parts/swa/area.php:209
+msgid "Text Font Family"
+msgstr "テキストのフォントファミリー"
+
+#: inc/theme-customizer/parts/swa/area.php:222
+msgid "Text Color"
+msgstr "テキスト色"
+
+#: inc/theme-customizer/parts/swa/area.php:236
+msgid "Text Link Color"
+msgstr "テキストリンクの色"
+
+#: inc/theme-customizer/parts/swa/area.php:252
+msgid "Widget Area"
+msgstr "ウィジェットエリア"
+
+#: inc/theme-customizer/parts/swa/area.php:272
+msgid "Widget"
+msgstr "ウィジェット"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:91
+msgid "In Header"
+msgstr "ヘッダー内"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:92
+msgid "Slidebar Left"
+msgstr "左スライドバー"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:93
+msgid "Column Left"
+msgstr "左カラム"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:94
+msgid "Column Left Fixed"
+msgstr "左カラム固定位置"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:95
+msgid "Slidebar Right"
+msgstr "右スライドバー"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:96
+msgid "Column Right"
+msgstr "右カラム"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:97
+msgid "Column Right Fixed"
+msgstr "右カラム固定位置"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:98
+msgid "Mobile Slidebar"
+msgstr "モバイルスライドバー"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:102
+msgid "Located in Header."
+msgstr "ヘッダー内に位置します。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:103
+msgid ""
+"Slidebar located on the left of the window. This widget area is NOT "
+"Displayed in Mobile."
+msgstr ""
+"スライドバーはウィンドウの左側に位置します。このウィジェットエリアはモバイル"
+"端末では表示されません。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:104
+msgid ""
+"Widget Area located on the left of the main content. This widget area is NOT "
+"Displayed in Mobile."
+msgstr "メインコンテンツの左側に位置します。モバイル端末では表示されません。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:105
+msgid ""
+"Widget Area located below Column Left that can be fixed. This widget area is "
+"NOT Displayed in Mobile."
+msgstr "メインコンテンツの左側に固定されます。モバイル端末では表示されません。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:106
+msgid ""
+"Slidebar located on the right of the window. This widget area is NOT "
+"Displayed in Mobile."
+msgstr ""
+"スライドバーはウィンドウの右側に位置します。このウィジェットエリアはモバイル"
+"端末では表示されません。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:107
+msgid ""
+"Widget Area located on the right of the main content. This widget area is "
+"NOT Displayed in Mobile."
+msgstr "メインコンテンツの右側に位置します。モバイル端末では表示されません。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:108
+msgid ""
+"Widget Area located below Column Right that can be fixed. This widget area "
+"is NOT Displayed in Mobile."
+msgstr "メインコンテンツの右側に固定されます。モバイル端末では表示されません。"
+
+#: inc/widget-area/class-ace-widget-area-manager.php:109
+msgid ""
+"This is the Slidebar on Right Side which is displayed ONLY in Mobile Page. "
+"This Area Shows and Hides when Button \"Widget\" at the bottom is clicked."
+msgstr ""
+"このスライドバーはモバイル端末でのみ右側からスライド表示されます。このエリア"
+"は下部のウィジェットボタンを押すことで表示・非表示されます。"
+
+#: inc/widget-area/class-ace-widget-area.php:60
+msgid "Failed to initialize the widget area."
+msgstr "ウィジェットエリアの初期化に失敗しました。"
+
+#: searchform.php:10
+msgid "Search Keywords"
+msgstr "検索キーワード"
+
+#: template/archive/article-slider.php:87 template/archive/meta.php:50
+msgid "Read More"
+msgstr ""
+
+#: template/archive/header.php:22
+#, php-format
+msgid "Search Result: %s"
+msgstr "検索結果：%s"
+
+#: template/archive/header/blog.php:27
+msgid "Blog"
+msgstr "ブログ"
+
+#: template/bbpress.php:7
+msgid "No Post"
+msgstr "投稿無し"
+
+#: template/content.php:68
+msgid "The Required Page doesn't exist."
+msgstr "リクエストされたページは存在しません。"
+
+#: template/header/breadcrumb.php:18
+msgid "Shop"
+msgstr "ショップ"
+
+#: template/header/navi.php:3
+msgid "Navi Menu"
+msgstr "ナビメニュー"
+
+#: template/header/navi.php:13
+msgid "Close Navi Menu"
+msgstr "ナビメニューを閉じる"
+
+#: template/mobile/mobile-footer-menu-buttons.php:10
+msgctxt "Mobile Button"
+msgid "Menu"
+msgstr "メニュー"
+
+#: template/mobile/mobile-footer-menu-buttons.php:14
+msgctxt "Mobile Button"
+msgid "Home"
+msgstr "ホーム"
+
+#: template/mobile/mobile-footer-menu-buttons.php:18
+msgctxt "Mobile Button"
+msgid "Top"
+msgstr "トップ"
+
+#: template/mobile/mobile-footer-menu-buttons.php:23
+msgctxt "Mobile Button"
+msgid "Widgets"
+msgstr "ウィジェット"
+
+#: template/nav-menus/nav-menu.php:91 template/nav-menus/nav-menu.php:95
+msgid "Primary Navigation"
+msgstr "メインナビ"
+
+#: template/nav-menus/nav-menu.php:94
+msgid "Secondary Navigation"
+msgstr "サブナビメニュー"
+
+#: template/singular/link-pages.php:5
+msgid "Pages:"
+msgstr "ページ："
+
+#: template/singular/link-pages.php:11 template/singular/prevnext.php:25
+msgid "Next Page"
+msgstr "次のページ"
+
+#: template/singular/link-pages.php:12 template/singular/prevnext.php:11
+msgid "Prev Page"
+msgstr "前のページ"
+
+#: template/singular/tax-post.php:34
+msgid "Author"
+msgstr "著者"
+
+#: template/singular/tax-post.php:43
+msgid "Date"
+msgstr "日付"
+
+#: template/singular/tax-post.php:51
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: template/singular/tax-post.php:60
+msgid "Tags"
+msgstr "タグ"
+
+#: template/woocommerce/wc-account-page.php:15
+msgctxt "WooCommerce Endpoint"
+msgid "Your Account"
+msgstr "あなたのアカウント"
+
+#: template/woocommerce/wc-account-page.php:18
+msgctxt "WC Account Page"
+msgid "Order Details"
+msgstr "注文の詳細"
+
+#: template/woocommerce/wc-account-page.php:19
+msgctxt "WC Account Page"
+msgid "Add Payment Method"
+msgstr "支払い方法の追加"
+
+#: template/woocommerce/wc-account-page.php:39
+#: template/woocommerce/wc-cart.php:12 template/woocommerce/wc-checkout.php:12
+#: template/woocommerce/wc-endpoint-url.php:14
+msgid "No Posts."
+msgstr "投稿無し。"
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "delete"
+msgstr "削除"
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "has"
+msgstr ""
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "get"
+msgstr ""
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "Wrong offset!"
+msgstr "誤ったキーがセットされています。"
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "Wrong length!"
+msgstr "長さに誤りがあります。"
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "Promise-chain cycle"
+msgstr ""
+
+#: assets/js/frontend/fe-main.min.js:1 assets/js/frontend/mb-main.min.js:1
+msgid "Promise can't be resolved itself"
+msgstr ""
+
+#~ msgid "WP Works Shop Blog"
+#~ msgstr "WPワークスショップブログ"
+
+#~ msgid "Updates"
+#~ msgstr "更新"
+
+#~ msgid "Theme Customizer"
+#~ msgstr "テーマカスタマイザー"
+
+#~ msgid "Edit Status"
+#~ msgstr "ステータスを編集"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Cancel"
+#~ msgstr "キャンセル"
+
+#~ msgid "https://wordpress.org/"
+#~ msgstr "https://ja.wordpress.org/"
+
+#~ msgid "Powered by %s"
+#~ msgstr "Powered by %s"
+
+#~ msgid "Back to top"
+#~ msgstr "トップへ戻る"
+
+#~ msgctxt "Used between list items, there is a space after the comma."
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "Categories: %s"
+#~ msgstr "カテゴリー: %s"
+
+#~ msgid "Tags: %s"
+#~ msgstr "タグ: %s"
+
+#~ msgid "%s ago"
+#~ msgstr "%s前"
+
+#~ msgid "Hook to display"
+#~ msgstr "表示するフック"
+
+#~ msgid "Width"
+#~ msgstr "幅"
+
+#~ msgid "Adapted to Content Area Width"
+#~ msgstr "コンテンツエリア幅に合わせる"
+
+#~ msgid "Maximum ( 100% )"
+#~ msgstr "最大幅 （ 100% ）"
+
+#~ msgid "1 / 2 ( 50% )"
+#~ msgstr "半分 （ 50% ）"
+
+#~ msgid "1 / 3 ( 33% )"
+#~ msgstr "３分の１ （ 33% ）"
+
+#~ msgid "Print in Side Menu ( only for Mobile )"
+#~ msgstr "サイドメニューに出力"
+
+#~ msgid "Description"
+#~ msgstr "詳細"
+
+#~ msgid "Add New %s"
+#~ msgstr "新しく%sを追加"
+
+#~ msgid "New %s"
+#~ msgstr "新しい%s"
+
+#~ msgid "Edit %s"
+#~ msgstr "%sを編集"
+
+#~ msgid "View %s"
+#~ msgstr "%sを表示"
+
+#~ msgid "All %s"
+#~ msgstr "%s一覧"
+
+#~ msgid "Search %s"
+#~ msgstr "%sを検索"
+
+#~ msgid "Parent %s:"
+#~ msgstr "親%s"
+
+#~ msgid "No %s found."
+#~ msgstr "%sが見つかりませんでした。"
+
+#~ msgid "No %s found in Trash."
+#~ msgstr "ゴミ箱に%sが見つかりませんでした。"
+
+#~ msgid "This is \"%s %d\"."
+#~ msgstr "これは「%s %d」です。"
+
+#~ msgid "This is \"Widget Area %d\"."
+#~ msgstr "これは「ウィジェットエリア %d」です。"
+
+#~ msgid "Custom"
+#~ msgstr "カスタム"
+
+#~ msgid "Before Content"
+#~ msgstr "コンテンツ前"
+
+#~ msgid "Class"
+#~ msgstr "クラス"
+
+#~ msgid "Select an Image"
+#~ msgstr "イメージを選択"
+
+#~ msgid "Set the Image"
+#~ msgstr "イメージをセット"
+
+#~ msgid "File to upload is NOT selected."
+#~ msgstr "アップロードするファイルが選択されていません。"
+
+#~ msgid "File was successfully Uploaded."
+#~ msgstr "ファイルのアップロードが成功しました。"
+
+#~ msgid "Files to remove are NOT selected."
+#~ msgstr "削除するファイルが選択されていません。"
+
+#~ msgid "Selected files were successfully removed."
+#~ msgstr "選択されたファイルは削除されました。"
+
+#~ msgid "Select a file to upload."
+#~ msgstr "アップロードするファイルを選択してください。"
+
+#~ msgid "Not following file types : 'ttf' 'otf' 'eot' 'woff' 'woff2'"
+#~ msgstr ""
+#~ "次のファイルのいずれでもありません。「ttf」「otf」「eot」「woff」「woff2」"
+
+#~ msgid "File Uploaded."
+#~ msgstr "ファイルがアップロードされました。"
+
+#~ msgid "Please select fonts to delete."
+#~ msgstr "削除するフォントを選択してください。"
+
+#~ msgid "Deleted the selected File(s)"
+#~ msgstr "選択されたファイルが削除されました。"
+
+#~ msgid "Failed conversion into JSON."
+#~ msgstr "JSONへの変換が失敗しました。"
+
+#~ msgid "Settings by Ace"
+#~ msgstr "Aceの設定"
+
+#~ msgid "Icons"
+#~ msgstr "アイコン"
+
+#~ msgid "Pixabay Image Fetcher"
+#~ msgstr "Pixabayイメージ"
+
+#~ msgid "API Key Successfully Saved."
+#~ msgstr "APIキーが保存されました。"
+
+#~ msgid "Inserted"
+#~ msgstr "挿入"
+
+#~ msgid "Remove the Check"
+#~ msgstr "チェックを外してください。"
+
+#~ msgid "Next"
+#~ msgstr "次"
+
+#~ msgid "Widget Area %d"
+#~ msgstr "ウィジェットエリア %d"
+
+#~ msgid "How to handle CSS Files"
+#~ msgstr "CSSファイルの使い方"
+
+#~ msgid "You can upload and enqueue your own CSS Files if you want"
+#~ msgstr "自分で編集したCSSファイルをアップロードして出力することができます。"
+
+#~ msgid "Not Possible to apply, to upload and to delete at once."
+#~ msgstr "適用・アップロード・削除は一度に処理できません。"
+
+#~ msgid "Apply CSS"
+#~ msgstr "CSSを適用"
+
+#~ msgid "CSS"
+#~ msgstr "CSS"
+
+#~ msgid "File Name"
+#~ msgstr "ファイル名"
+
+#~ msgid "Upload CSS File"
+#~ msgstr "CSSファイルをアップロード"
+
+#~ msgid ""
+#~ "Please check if file name includes multibyte letters ( like Japanese "
+#~ "letters ) before upload it to avoid HTML warning."
+#~ msgstr ""
+#~ "HTML警告を回避するために、アップロード前にファイル名に日本語のようなマルチ"
+#~ "バイト文字が含まれていないことを確認してください。"
+
+#~ msgid ""
+#~ "Those letters ( specially combined one  ) sometimes causes \"Text run is "
+#~ "not in Unicode Normalization Form C\" in test tools like HTML Validator"
+#~ msgstr "これらの文字はエラーを起こす要因となり得ます。"
+
+#~ msgid "Upload"
+#~ msgstr "アップロード"
+
+#~ msgid "Delete CSS"
+#~ msgstr "CSSを削除"
+
+#~ msgid "How to Use Google Fonts"
+#~ msgstr "Google Fontsの使い方"
+
+#~ msgid "Enter your Google Fonts API Key and click \"Save\"."
+#~ msgstr "APIキーを入力して「保存」をクリックしてください。"
+
+#~ msgid ""
+#~ "Select as many as you want from Listed Fonts and click \"Use These Fonts"
+#~ "\"."
+#~ msgstr ""
+#~ "使いたいフォントをリストから選択肢、「これらのフォントを使用する」をクリッ"
+#~ "クしてください。"
+
+#~ msgid ""
+#~ "These settings enable you to use the font-family ( automatically load in "
+#~ "public page )."
+#~ msgstr "これらの設定によりフォントを自動でロードするようになります。"
+
+#~ msgid ""
+#~ "Also, Selected Fonts will be added to fonts list in theme customizer so "
+#~ "that you can select there."
+#~ msgstr ""
+#~ "また、選択されたフォントはテーマカスタマイザーの選択肢にも追加されます。"
+
+#~ msgid ""
+#~ "Notice: Loading many fonts might make your website slow. You should "
+#~ "remove the check for the Font you won't use."
+#~ msgstr ""
+#~ "※ たくさんのフォントをロードすることでウェブページの速度が遅くなることが懸"
+#~ "念されます。使わないフォントはチェックを外すことが推奨されます。"
+
+#~ msgid "Google Fonts API Key:"
+#~ msgstr "Google Fonts API Key:"
+
+#~ msgid "Save"
+#~ msgstr "保存"
+
+#~ msgid "Go to Google Console."
+#~ msgstr "コンソールへ行く"
+
+#~ msgid "Preview Fonts Here: %s"
+#~ msgstr "こちらでフォントをプレビュー： %s"
+
+#~ msgid "Search Fonts: %s"
+#~ msgstr "フォントを検索： %s"
+
+#~ msgid "Show Only Selected Fonts"
+#~ msgstr "選択されているフォントだけを表示する"
+
+#~ msgid "Font-Family"
+#~ msgstr "フォントファミリー"
+
+#~ msgid "Use These Fonts"
+#~ msgstr "これらのフォントを使用する"
+
+#~ msgid "How to handle Font Files"
+#~ msgstr "フォントファイルの使い方"
+
+#~ msgid "Not Possible to upload and to delete at once."
+#~ msgstr "アップロードと削除は一度にできません。"
+
+#~ msgid ""
+#~ "For uploads, only allows files with tails 'oet' 'otf' 'ttf' 'woff' "
+#~ "'woff2'."
+#~ msgstr ""
+#~ "アップロードされるファイルの拡張子は次の「oet」「otf」「ttf」「woff」"
+#~ "「woff2」に限ります。"
+
+#~ msgid ""
+#~ "Delete tool deletes all files related to the selected 'Font-Family's."
+#~ msgstr ""
+#~ "削除ツールは選択されたフォントファミリーに関連する全てのアップロードファイ"
+#~ "ルを削除します。"
+
+#~ msgid ""
+#~ "Font files will be uploaded to '/wp-content/uploads/custom-fonts/'.\n"
+#~ "\t\t\t\tIf fonts are not displayed correctly, please define 'font-face' "
+#~ "by yourself.\n"
+#~ "\t\t\t\t'font-face's uploaded and defined in your own way won't be "
+#~ "displayed as choices of font settings of theme customizer."
+#~ msgstr ""
+#~ "フォントファイルは「/wp-content/uploads/custom-fonts/」にアップロードされ"
+#~ "ます。\n"
+#~ "\t\t\t\tフォントが正しく表示されない場合、font-faceをご自身で設定してくだ"
+#~ "さい。\n"
+#~ "\t\t\t\tご自身でセットアップしたfont-faceはテーマカスタマイザーのフォント"
+#~ "設定に表示されません。"
+
+#~ msgid "Upload Font File"
+#~ msgstr "フォントファイルをアップロード"
+
+#~ msgid ""
+#~ "Please check if file name has multibyte characters ( like Japanese "
+#~ "characters ) before upload it. Otherwise, the name will be Hashed."
+#~ msgstr ""
+#~ "アップロード前に日本語のようなマルチバイト文字がファイル名に含まれていない"
+#~ "ことをご確認ください。名前がハッシュされる可能性があります。"
+
+#~ msgid "Delete Fonts"
+#~ msgstr "フォントを削除"
+
+#~ msgid "General Settings"
+#~ msgstr "一般設定"
+
+#~ msgid "Injection"
+#~ msgstr "挿入"
+
+#~ msgid "Page Speed"
+#~ msgstr "ページスピード"
+
+#~ msgid "API Keys"
+#~ msgstr "APIキー"
+
+#~ msgid "Latest Icon Version: %s"
+#~ msgstr "最新のアイコンのバージョン：%s"
+
+#~ msgid "Current Icon Version: %s"
+#~ msgstr "現在のアイコンのバージョン：%s"
+
+#~ msgid "You are currently using Latest Version!"
+#~ msgstr "現在最新バージョンをご利用中です。"
+
+#~ msgid "You are currently using Older Version!"
+#~ msgstr "古いバージョンをご利用です。"
+
+#~ msgid "API Keys Settings"
+#~ msgstr "APIキー設定"
+
+#~ msgid "API which Ace can use."
+#~ msgstr "Aceが使用できるAPI"
+
+#~ msgid "Please enter Google Fonts API Key"
+#~ msgstr "GoogleフォントのAPIキーを入力してください。"
+
+#~ msgid "Google Map"
+#~ msgstr "Googleマップ"
+
+#~ msgid "Please enter Google Map API Key."
+#~ msgstr "GoogleマップのAPIキーを入力してください。"
+
+#~ msgid "Pixabay"
+#~ msgstr "Pixabayキー"
+
+#~ msgid "Please Enter Pixabay API key of your account."
+#~ msgstr "ご自身のアカウントのAPIキーを入力してください。"
+
+#~ msgid "You can get <a target=\"_blank\" href=\"%s\">here</a>."
+#~ msgstr "<a href=“%s”>こちら</a>で取得できます。"
+
+#~ msgid "Initial Tab"
+#~ msgstr "初期タブ"
+
+#~ msgid "Select the tab you want to display first when this page is loaded"
+#~ msgstr "このページがロードされる際に最初に表示されるタブを選択できます。"
+
+#~ msgid "Activations"
+#~ msgstr "有効化"
+
+#~ msgid "Post Format Not to Display by Main Query"
+#~ msgstr "メインクエリで表示しない投稿フォーマット"
+
+#~ msgid "Aisde"
+#~ msgstr "アサイド"
+
+#~ msgid "Gallary"
+#~ msgstr "ギャラリー"
+
+#~ msgid "Quote"
+#~ msgstr "引用"
+
+#~ msgid "Status"
+#~ msgstr "ステータス"
+
+#~ msgid "Video"
+#~ msgstr "動画"
+
+#~ msgid "Audio"
+#~ msgstr "オーディオ"
+
+#~ msgid "Chat"
+#~ msgstr "チャット"
+
+#~ msgid ""
+#~ "Select Post Formats Not to display in post list of archive pages that "
+#~ "include home page."
+#~ msgstr ""
+#~ "ホームページを含むアーカイブで非表示にする投稿フォーマットを選択してくださ"
+#~ "い。"
+
+#~ msgid "Remove Actions"
+#~ msgstr "アクションの除去"
+
+#~ msgid "RSD"
+#~ msgstr "RSD"
+
+#~ msgid "You can remove default actions by wordpress"
+#~ msgstr ""
+#~ "ワードプレスがデフォルトで出力するメタタグ出力アクションを削除します。"
+
+#~ msgid "Settings for Auto Insert"
+#~ msgstr "自動挿入の設定"
+
+#~ msgid "Print in HEAD tag"
+#~ msgstr "HEADタグ内に出力"
+
+#~ msgid "Text will be printed in head tag hooked by 'wp_head'."
+#~ msgstr "テキストは「wp_head」にフックされるHEADタグ内に出力されます。"
+
+#~ msgid "Print after Starting BODY Tag"
+#~ msgstr "開始BODYタグの直後に出力"
+
+#~ msgid "Texts will be printed after Starting BODY Tag '&lt;body&gt;'."
+#~ msgstr "テキストは開始BODYタグ「&lt;body&gt;」の後に出力されます。"
+
+#~ msgid "Print in footer"
+#~ msgstr "フッターに出力"
+
+#~ msgid ""
+#~ "Texts will be printed in footer before the ending BODY tag '&lt;/"
+#~ "body&gt;'."
+#~ msgstr "テキストはBODY閉じタグ「&lt;/body&gt;」の前に出力されます。"
+
+#~ msgid "Other Settings"
+#~ msgstr "その他の設定"
+
+#~ msgid "SEO Settings"
+#~ msgstr "SEO設定"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Auto Description Meta"
+#~ msgstr "詳細"
+
+#~ msgid "Disable Jetpack Styles."
+#~ msgstr "Jetpackのスタイルを無効化します。"
+
+#~ msgid "Disable jQuery."
+#~ msgstr "jQueryを無効化します。"
+
+#~ msgid "Num of Optional Widget Areas"
+#~ msgstr "オプショナルウィジェットエリアの数"
+
+#~ msgid "Enter Num"
+#~ msgstr "数を入力"
+
+#~ msgid ""
+#~ "* Choice 'Custom' for 'Hook to display' is for Child Themes or for "
+#~ "Printing in Mobile Sidemenu, because this needs a function "
+#~ "'dynamic_sidebar'."
+#~ msgstr ""
+#~ "※ 選択肢「カスタム」は子テーマやモバイルのメニューに使用することを想定して"
+#~ "おります。"
+
+#~ msgid "API Key"
+#~ msgstr "APIキー"
+
+#~ msgid "Pixabay Key"
+#~ msgstr "Pixabayキー"
+
+#~ msgid "You can get <a href=\"%s\">here</a>."
+#~ msgstr "<a href=“%s”>こちら</a>で取得できます。"
+
+#~ msgid "Media Fetcher"
+#~ msgstr "メディアフェッチャー"
+
+#~ msgid "Fetch Images"
+#~ msgstr "イメージを取得"
+
+#~ msgid "Movie"
+#~ msgstr "動画"
+
+#~ msgid "Options"
+#~ msgstr "オプション"
+
+#~ msgid "These options settings values won't be saved."
+#~ msgstr "これらのオプション設定は保存されません。"
+
+#~ msgid "Image Type"
+#~ msgstr "画像タイプ"
+
+#~ msgid "All"
+#~ msgstr "全て"
+
+#~ msgid "Photo"
+#~ msgstr "写真"
+
+#~ msgid "Illustration"
+#~ msgstr "イラスト"
+
+#~ msgid "Vector"
+#~ msgstr "ベクター"
+
+#~ msgid "Video Type"
+#~ msgstr "動画タイプ"
+
+#~ msgid "Film"
+#~ msgstr "フィルム"
+
+#~ msgid "Animation"
+#~ msgstr "アニメーション"
+
+#~ msgid "Orientation"
+#~ msgstr "オリエンテーション"
+
+#~ msgid "Category"
+#~ msgstr "カテゴリー"
+
+#~ msgid "Fashion"
+#~ msgstr "ファッション"
+
+#~ msgid "Backgrounds"
+#~ msgstr "背景"
+
+#~ msgid "Science"
+#~ msgstr "科学"
+
+#~ msgid "Education"
+#~ msgstr "教育"
+
+#~ msgid "People"
+#~ msgstr "人"
+
+#~ msgid "Feelings"
+#~ msgstr "感情"
+
+#~ msgid "Religion"
+#~ msgstr "宗教"
+
+#~ msgid "Health"
+#~ msgstr "健康"
+
+#~ msgid "Places"
+#~ msgstr "場所"
+
+#~ msgid "Animals"
+#~ msgstr "動物"
+
+#~ msgid "Industry"
+#~ msgstr "産業"
+
+#~ msgid "Food"
+#~ msgstr "食べ物"
+
+#~ msgid "Computer"
+#~ msgstr "コンピュータ"
+
+#~ msgid "Sports"
+#~ msgstr "スポーツ"
+
+#~ msgid "Transportation"
+#~ msgstr "交通"
+
+#~ msgid "Travel"
+#~ msgstr "旅行"
+
+#~ msgid "Buildings"
+#~ msgstr "建物"
+
+#~ msgid "Business"
+#~ msgstr "仕事"
+
+#~ msgid "Music"
+#~ msgstr "音楽"
+
+#~ msgid "Search High Resolution"
+#~ msgstr "高画質を検索"
+
+#~ msgid ""
+#~ "This requires permission. Please go to %s and Request full API Access"
+#~ msgstr ""
+#~ "許可が求められます。%sへ移動し、フルAPIアクセスのリクエストをしてくださ"
+#~ "い。"
+
+#~ msgid "Min Width"
+#~ msgstr "最小横幅"
+
+#~ msgid "Min Height"
+#~ msgstr "最小縦幅"
+
+#~ msgid "order"
+#~ msgstr "順番"
+
+#~ msgid "Popular"
+#~ msgstr "人気"
+
+#~ msgid "Latest"
+#~ msgstr "最新"
+
+#~ msgid "Per Page"
+#~ msgstr "ページ毎"
+
+#~ msgid "Preview"
+#~ msgstr "プレビュー"
+
+#~ msgid "Import"
+#~ msgstr "インポート"
+
+#~ msgid "Loading Images..."
+#~ msgstr "イメージをロード中。。。"
+
+#~ msgid "Importing Image..."
+#~ msgstr "イメージをインポート中。。。"
+
+#~ msgid "Recommended Settings by %s"
+#~ msgstr "%sによる推奨設定"
+
+#~ msgid "Name of the Website"
+#~ msgstr "ウェブサイトの名前"
+
+#~ msgid "Edit the Name of the Website"
+#~ msgstr "ウェブサイトの名前を編集"
+
+#~ msgid "Description of the Website"
+#~ msgstr "ウェブサイトの詳細"
+
+#~ msgid "Edit Description of the Website"
+#~ msgstr "ウェブサイトの詳細を編集"
+
+#~ msgid "Setting for Permalink"
+#~ msgstr "パーマリンクの設定"
+
+#~ msgid ""
+#~ "After Saved, Please go to \"<a target=\"_blank\" href=\"%s\">Permalink "
+#~ "Settings</a>\""
+#~ msgstr " “<a target=“_blank” href=“%s”>Permalink Settings</a>”"
+
+#~ msgid "Custom Blog Page Mode"
+#~ msgstr "カスタムブログページモード"
+
+#~ msgid "Filters"
+#~ msgstr "フィルター"
+
+#~ msgid "Deactivation of Widget Areas"
+#~ msgstr "ウィジェットエリアの無効化"
+
+#~ msgid "CTA in Fixed Position"
+#~ msgstr "固定位置のCTA"
+
+#~ msgid "CTA Options"
+#~ msgstr "CTAオプション"
+
+#~ msgid "Disable Auto Paragraph"
+#~ msgstr "自動パラグラフの無効化"
+
+#~ msgid "This will disable auto paragraph filter for the content. "
+#~ msgstr "コンテンツ用の自動パラグラフフィルターを無効化します。"
+
+#~ msgid ""
+#~ "This will use block contents instead of the general blog articles for the "
+#~ "page. "
+#~ msgstr "ブログページにテンプレートではなくブロックコンテンツを採用します。"
+
+#~ msgid "Check the widget areas to Deactivate."
+#~ msgstr "出力しないウィジェットエリアにチェックを入れてください。"
+
+#~ msgid ""
+#~ "If you want to show CTA in Popup Box at Fixed Bottom Position, the CTA "
+#~ "will generated by data following."
+#~ msgstr ""
+#~ "下部に固定表示されるポップアップボックスでCTAを表示させる場合、CTAは次の"
+#~ "データにより生成されます。"
+
+#~ msgid ""
+#~ "This value is going to be used as Title. The CTA Title is the label only "
+#~ "to identify this page."
+#~ msgstr ""
+#~ "この値はタイトルとして使用されます。ページタイトルはこのCTAを特定するため"
+#~ "のラベルです。"
+
+#~ msgid "Hide Title"
+#~ msgstr "タイトルを隠す"
+
+#~ msgid "This will hide the CTA title."
+#~ msgstr "CTAタイトルを非表示にします。"
+
+#~ msgid ""
+#~ "This descriptoin is used when you set the CTA in bottom fixed. If you set "
+#~ "the CTA after the content, Content by the blocks will be applied."
+#~ msgstr ""
+#~ "この詳細は下部に固定されたボックスのCTAに使用されます。コンテンツ後に表示"
+#~ "させる場合はブロックコンテンツが適用されます。"
+
+#~ msgid "Button Label"
+#~ msgstr "ボタンラベル"
+
+#~ msgid "This is going to be used as the Button Label"
+#~ msgstr "ボタンのラベルとして使用されます。"
+
+#~ msgid "Link URL"
+#~ msgstr "リンク URL"
+
+#~ msgid "URL to be called by the button."
+#~ msgstr "ボタンによりコールされるURL"
+
+#~ msgid "Position"
+#~ msgstr "位置"
+
+#~ msgid "After Content"
+#~ msgstr "コンテンツ後"
+
+#~ msgid "Fixed Bottom"
+#~ msgstr "固定された下部"
+
+#~ msgid "Ace Component"
+#~ msgstr "Ace コンポーネント"
+
+#~ msgid "Ace Block"
+#~ msgstr "Ace ブロック"
+
+#~ msgid "Ace Layout"
+#~ msgstr "Ace レイアウト"
+
+#~ msgid "Ace Blog Page Only"
+#~ msgstr "Ace ブログページのみ"
+
+#~ msgid "Fade"
+#~ msgstr "フェイド"
+
+#~ msgid "Fade Up"
+#~ msgstr "フェイド上"
+
+#~ msgid "Fade Right"
+#~ msgstr "フェイド右"
+
+#~ msgid "Fade Down"
+#~ msgstr "フェイド下"
+
+#~ msgid "Fade Left"
+#~ msgstr "フェイド左"
+
+#~ msgid "Standard"
+#~ msgstr "標準"
+
+#~ msgid "CTA"
+#~ msgstr "CTA"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search Form"
+#~ msgstr "検索"
+
+#~ msgid "Slider"
+#~ msgstr "スライダー"
+
+#~ msgid "Template"
+#~ msgstr "テンプレート"
+
+#~ msgid "No Animations"
+#~ msgstr "アニメーションなし"
+
+#~ msgid "RSS"
+#~ msgstr "RSS"
+
+#~ msgid "No Icons"
+#~ msgstr "アイコン無し"
+
+#~ msgid "%s (Invalid)"
+#~ msgstr "%s （無効）"
+
+#~ msgid "Use an Icon ?"
+#~ msgstr "アイコンを使用しますか？"
+
+#~ msgid "Hide Texts? "
+#~ msgstr "テキストを隠す"
+
+#~ msgid "This works only with icon."
+#~ msgstr "こちらはアイコンがセットされている場合にのみ有効です。"
+
+#~ msgctxt "Nav Menu Custom Field"
+#~ msgid "Children Type: "
+#~ msgstr "サブメニュータイプ"
+
+#~ msgid "Thumbnail: "
+#~ msgstr "サムネイル："
+
+#~ msgid "Set Image"
+#~ msgstr "イメージをセット"
+
+#~ msgid "Remove Images"
+#~ msgstr "イメージを削除"
+
+#~ msgid "Mobile Sidebar ( Wrapper )"
+#~ msgstr "モバイルサイドバー（ラッパー）"
+
+#~ msgid "Before Content Area ( Wrapper )"
+#~ msgstr "コンテンツエリア前（ラッパー）"
+
+#~ msgid "Before the Content ( Wrapper )"
+#~ msgstr "コンテンツ前（ラッパー）"
+
+#~ msgid "At the Beginning of the Content ( Wrapper )"
+#~ msgstr "コンテンツ開始（ラッパー）"
+
+#~ msgid "Before the First H2 tag of the Content ( Wrapper )"
+#~ msgstr "コンテンツ内最初のH2タグ前（ラッパー）"
+
+#~ msgid "At the End of the Content ( Wrapper )"
+#~ msgstr "コンテンツ末（ラッパー）"
+
+#~ msgid "After the Content ( Wrapper )"
+#~ msgstr "コンテンツ後（ラッパー）"
+
+#~ msgid "After Content Area ( Wrapper )"
+#~ msgstr "コンテンツエリア後（ラッパー）"
+
+#~ msgid "In the Footer ( Wrapper )"
+#~ msgstr "フッター内（ラッパー）"
+
+#~ msgid "Background Color ( Each Area )"
+#~ msgstr "背景色（各エリア）"
+
+#~ msgid "Background Image ( Each Area )"
+#~ msgstr "背景イメージ（各エリア）"
+
+#~ msgid "Background Size ( Each Area )"
+#~ msgstr "背景サイズ（各エリア）"
+
+#~ msgid "Background Position Row ( Each Area )"
+#~ msgstr "背景位置Y（各エリア）"
+
+#~ msgid "Background Position Column ( Each Area )"
+#~ msgstr "背景位置X（各エリア）"
+
+#~ msgid "Background Repeat ( Each Area )"
+#~ msgstr "背景繰り返し（各エリア）"
+
+#~ msgid "Background Attachment ( Each Area )"
+#~ msgstr "背景アタッチメント（各エリア）"
+
+#~ msgid "Padding for Widget Area"
+#~ msgstr "ウィジェットエリアのパッド"
+
+#~ msgid "Border"
+#~ msgstr "境界"
+
+#~ msgid "Space between Widgets"
+#~ msgstr "ウィジェット間の空白"
+
+#~ msgid "Font Family"
+#~ msgstr "フォントファミリー"
+
+#~ msgid "Link Text Color"
+#~ msgstr "リンクテキスト色"
+
+#~ msgid "Before Primary ( Wrapper )"
+#~ msgstr "メイン前（ラッパー）"
+
+#~ msgid "Before Content ( Wrapper )"
+#~ msgstr "コンテンツ前（ラッパー）"
+
+#~ msgid "Beginning of the Content ( Wrapper )"
+#~ msgstr "コンテンツ開始（ラッパー）"
+
+#~ msgid "End of the Content ( Wrapper )"
+#~ msgstr "コンテンツ最後（ラッパー）"
+
+#~ msgid "After Content ( Wrapper )"
+#~ msgstr "コンテンツ後（ラッパー）"
+
+#~ msgid "After Primary ( Wrapper )"
+#~ msgstr "メイン後（ラッパー）"
+
+#~ msgid "Background Color ( Area Wrapper )"
+#~ msgstr "背景色（エリアラッパー）"
+
+#~ msgid "Background Image ( Area Wrapper )"
+#~ msgstr "背景イメージ（エリアラッパー）"
+
+#~ msgid "Background Size ( Area Wrapper )"
+#~ msgstr "背景サイズ（エリアラッパー）"
+
+#~ msgid "Background Position Row ( Area Wrapper )"
+#~ msgstr "背景位置Y（エリアラッパー）"
+
+#~ msgid "Background Position Column ( Area Wrapper )"
+#~ msgstr "背景位置X（エリアラッパー）"
+
+#~ msgid "Background Repeat ( Area Wrapper )"
+#~ msgstr "背景繰り返し（エリアラッパー）"
+
+#~ msgid "Background Attachment ( Area Wrapper )"
+#~ msgstr "背景アタッチメント（エリアラッパー）"
+
+#~ msgid "Post Author Attributes"
+#~ msgstr "著者の属性"
+
+#~ msgid "Data used for Post Author to display."
+#~ msgstr "表示される著者に使用されるデータ"
+
+#~ msgctxt "User Attribute"
+#~ msgid "Position"
+#~ msgstr "肩書き"
+
+#~ msgid "Optional Settings"
+#~ msgstr "オプション設定"
+
+#~ msgid "Slug Settings"
+#~ msgstr "スラッグ設定"
+
+#~ msgid "It's the same 'User Name for login'. Please change"
+#~ msgstr "ログイン用のユーザー名が同じものです。変更してください。"
+
+#~ msgid ""
+#~ "If the slug is the same value with 'User Name for Login', Please change."
+#~ "<br>The slug is used after Website URL like '%s/author/SLUG/'"
+#~ msgstr ""
+#~ "スラッグがログイン用のユーザー名と同じ場合、変更してください。<br>このス"
+#~ "ラッグは「%s/author/SLUG/」のようにウェブサイトのURLに使用されます。"
+
+#~ msgid "SNS Account URLs"
+#~ msgstr "SNSアカウントURL"
+
+#~ msgid ""
+#~ "Following URL is used as links of icons for widget author card which can "
+#~ "be displayed in post page."
+#~ msgstr ""
+#~ "次のURLはウィジェット「著者カード」用のアイコンのリンクとして使用されま"
+#~ "す。"
+
+#~ msgid "Before Primary"
+#~ msgstr "メイン前"
+
+#~ msgid "Beginning of Content"
+#~ msgstr "コンテンツ開始"
+
+#~ msgid "Before 1st H2 of Content"
+#~ msgstr "コンテンツの最初の見出し前"
+
+#~ msgid "End of Content"
+#~ msgstr "コンテンツ最後"
+
+#~ msgid "After Primary"
+#~ msgstr "メイン後"
+
+#~ msgid "In Footer"
+#~ msgstr "フッター内"
+
+#~ msgid "Widget Area %1$d"
+#~ msgstr "ウィジェットエリア %1$d"
+
+#~ msgid "This is \"Widget Area %1$d\"."
+#~ msgstr "これは「ウィジェットエリア%1$d」です。"
+
+#~ msgid "Ace Author Card"
+#~ msgstr "Ace 著者カード"
+
+#~ msgid "Show Post Count"
+#~ msgstr "投稿数を表示"
+
+#~ msgid "Ace TOC"
+#~ msgstr "Ace TOC"
+
+#~ msgid "CPT Content"
+#~ msgstr "CPTコンテンツ"
+
+#~ msgid "Ace CPT Content"
+#~ msgstr "Ace CPTコンテンツ"
+
+#~ msgid "Title："
+#~ msgstr "タイトル："
+
+#~ msgid "Hide Title："
+#~ msgstr "タイトルを隠す："
+
+#~ msgid "Post Type："
+#~ msgstr "投稿タイプ："
+
+#~ msgid "Select Content："
+#~ msgstr "コンテンツを選択："
+
+#~ msgid "Ace Entries"
+#~ msgstr "Aceエントリー"
+
+#~ msgid "Entries"
+#~ msgstr "エントリー"
+
+#~ msgid "Uncategorized"
+#~ msgstr "未分類"
+
+#~ msgid "Post Number to Show"
+#~ msgstr "表示する投稿数"
+
+#~ msgid "Widget Style"
+#~ msgstr "ウィジェットのスタイル"
+
+#~ msgid "Front Page"
+#~ msgstr "フロントページ"
+
+#~ msgid "Blog Page"
+#~ msgstr "ブログページ"
+
+#, fuzzy
+#~| msgid "WooCommerce"
+#~ msgid "WooCommerce Page"
+#~ msgstr "WooCommerce"
+
+#, fuzzy
+#~| msgid "Prev Page"
+#~ msgid "bbPress Page"
+#~ msgstr "前のページ"
+
+#~ msgid "BuddyPress Page"
+#~ msgstr "BuddyPressページ"
+
+#~ msgid "WooCommerce"
+#~ msgstr "WooCommerce"
+
+#~ msgid "Cart"
+#~ msgstr "カート"
+
+#~ msgid "Checkout"
+#~ msgstr "チェックアウト"
+
+#~ msgid "Account Page"
+#~ msgstr "アカウントページ"
+
+#~ msgid "PC"
+#~ msgstr "PC"
+
+#~ msgid "Only Mobile"
+#~ msgstr "モバイルのみ"
+
+#~ msgid "Settings to Detect Conditions"
+#~ msgstr "表示条件設定"
+
+#~ msgid "Show in following Pages"
+#~ msgstr "これらのページで表示"
+
+#~ msgid "Not Show in Following Pages"
+#~ msgstr "これらのページで非表示"
+
+#~ msgid "Check Not to be Displayed in Pages Below ( for WooCommerce Pages )"
+#~ msgstr ""
+#~ "以下のページにて非表示にする場合はチェックしてください。（WooCommerce用の"
+#~ "ページ）"
+
+#~ msgid "Select displayed Devices"
+#~ msgstr "表示されるデバイスを選択してください。"
+
+#~ msgid "Ace Map"
+#~ msgstr "Aceマップ"
+
+#~ msgid "Map Address. ( Query Keywords available )"
+#~ msgstr "マップのアドレス（キーワードでも自動で検索されます）"
+
+#~ msgid "Ace Slider"
+#~ msgstr "Aceスライダー"
+
+#~ msgid "SNS Share Icons"
+#~ msgstr "SNSシェアアイコン"
+
+#~ msgid "Ace SNS Share Icons"
+#~ msgstr "Ace SNSシェアアイコン"
+
+#~ msgid "Float"
+#~ msgstr "フロート"
+
+#~ msgid "Num of Icons on a line"
+#~ msgstr "一行に表示させるアイコンの数"
+
+#~ msgid "Icon Style"
+#~ msgstr "アイコンスタイル"
+
+#~ msgid "Show following icons:"
+#~ msgstr "次のアイコンを表示："
+
+#~ msgid "Specify the Categories to display"
+#~ msgstr "表示するカテゴリーを選択"
+
+#~ msgid "%1$s ( Link Number : %2$d )"
+#~ msgstr "%1$s（リンク数：%2$d）"
+
+#~ msgid "Display Settings for each pages"
+#~ msgstr "各ページ用の表示設定"
+
+#~ msgid "Check Not to be Displayed in Pages Below"
+#~ msgstr "以下のページにて非表示の場合はチェックをしてください。"
+
+#~ msgid "Shop or Product Pages"
+#~ msgstr "ショップもしくは商品ページ"
+
+#~ msgid "Cart Page"
+#~ msgstr "カートページ"
+
+#~ msgid "Checkout Page"
+#~ msgstr "チェックアウトページ"
+
+#~ msgid "All Devices"
+#~ msgstr "全端末"
+
+#~ msgid "Only Mobile Devices"
+#~ msgstr "モバイル端末のみ"
+
+#~ msgid "Only Tablet Devices ( not Phones )"
+#~ msgstr "タブレット端末のみ"
+
+#~ msgid "Only Phones ( not Tablet Devices )"
+#~ msgstr "スマートフォンのみ"
+
+#~ msgid "Specify the Format to display"
+#~ msgstr "表示するフォーマットを指定してください。"
+
+#~ msgid "Edit media"
+#~ msgstr "メディアを編集"
+
+#~ msgid "Append"
+#~ msgstr "追加"
+
+#~ msgid "Remove"
+#~ msgstr "削除"
+
+#~ msgid "Please register slider as Post Type in order to use this  block. "
+#~ msgstr ""
+#~ "このブロックを使用するためには投稿タイプとしてスライダーに登録してくださ"
+#~ "い。"
+
+#~ msgid "Go Register"
+#~ msgstr "登録しに行く"
+
+#~ msgid "Select a Slider"
+#~ msgstr "スライダーを選択"
+
+#~ msgid "Spcify Categories"
+#~ msgstr "カテゴリーを指定"
+
+#~ msgid "Select Categories in order to specify posts."
+#~ msgstr "投稿を絞るのにカテゴリーを選択してください。"
+
+#~ msgid "Spcify Tags"
+#~ msgstr "タグを指定"
+
+#~ msgid "Select Tags in order to specify posts."
+#~ msgstr "投稿を絞るのにタグを選択してください。"
+
+#~ msgid "Column"
+#~ msgstr "カラム"
+
+#~ msgid "Setup Column by blocks you want."
+#~ msgstr "ブロックによりカラムをセットしてください。"
+
+#~ msgid "Column Block as a component for the block Ace Columns."
+#~ msgstr "Aceカラムレイアウトに使用されるコンポーネントです。"
+
+#~ msgid "Column Size"
+#~ msgstr "カラムのサイズ"
+
+#~ msgid "Heading"
+#~ msgstr "見出し"
+
+#~ msgid "Heading."
+#~ msgstr "見出し"
+
+#~ msgid "Slide"
+#~ msgstr "スライド"
+
+#~ msgid ""
+#~ "Setup Slide which can contains block except slide widget. You can nest "
+#~ "the slider by putting slider in slide."
+#~ msgstr ""
+#~ "スライドウィジェット以外のブロックを有するスライドを設定してください。スラ"
+#~ "イド内でスライダーを配置することでネスト化させることも可能です。"
+
+#~ msgid "Slide Block with Image."
+#~ msgstr "イメージ付きのスライドブロック"
+
+#~ msgid "Slide Type"
+#~ msgstr "スライドタイプ"
+
+#~ msgid "Slider Type"
+#~ msgstr "スライダータイプ"
+
+#~ msgid "Slide Padding ( % )"
+#~ msgstr "スライドのパッド"
+
+#~ msgid "Background Color"
+#~ msgstr "背景色"
+
+#~ msgid "This color can be a overlay color for background image."
+#~ msgstr "この色は背景画像のオーバーレイカラーにもなります。"
+
+#~ msgid "Background Color Opacity"
+#~ msgstr "背景色の透明度"
+
+#~ msgid ""
+#~ "If Background Image is set for the slide, this opacity is going to be a "
+#~ "overlay opacity."
+#~ msgstr ""
+#~ "スライドの背景画像がセットされている場合、透明度はオーバーレイの濃度になり"
+#~ "ます。"
+
+#~ msgid ""
+#~ "Setup Tab which can contains block except the tab component. You can nest "
+#~ "the tabs by putting tabs in tab."
+#~ msgstr ""
+#~ "タブコンポーネント以外のブロックを有することができるタブをセットしてくださ"
+#~ "い。タブコンポーネント内にタブレイアウトを配置することでネスト化も可能で"
+#~ "す。"
+
+#~ msgid "Tab"
+#~ msgstr "タブ"
+
+#~ msgid "Tab Block."
+#~ msgstr "タブブロック"
+
+#~ msgid "Tab Type"
+#~ msgstr "タブタイプ"
+
+#~ msgid "Tabr Type"
+#~ msgstr "タブタイプ"
+
+#~ msgid "Tab Padding ( % )"
+#~ msgstr "タブのパッド"
+
+#~ msgid "Columns"
+#~ msgstr "カラムレイアウト"
+
+#~ msgid "Wrapper Styles"
+#~ msgstr "ラッパースタイル"
+
+#~ msgid "Wrapper Style:"
+#~ msgstr "ラッパースタイル"
+
+#~ msgid "Top Adjust"
+#~ msgstr "トップ調節"
+
+#~ msgid "Column Styles"
+#~ msgstr "カラムスタイル"
+
+#~ msgid "Column Margin"
+#~ msgstr "カラム余白"
+
+#~ msgid ""
+#~ "Please set attributes by Inspector Controls( Tab Panel on Right Side of "
+#~ "the window )."
+#~ msgstr "ウィンドウの右側にあるタブパネルによって属性をセットしてください。"
+
+#~ msgid "Section"
+#~ msgstr "セクション"
+
+#~ msgid "Section which can be designable."
+#~ msgstr "デザイン付きのセクションです。"
+
+#~ msgid "Section Style"
+#~ msgstr "セクションスタイル"
+
+#~ msgid "Style:"
+#~ msgstr "スタイル："
+
+#~ msgid "Is Block Width Max"
+#~ msgstr "最大幅ブロック"
+
+#~ msgid "Inner Width"
+#~ msgstr "内部の横幅"
+
+#~ msgid "Animation Enter"
+#~ msgstr "アニメーション：エンター"
+
+#~ msgid "Block Margin"
+#~ msgstr "ブロックの余白"
+
+#~ msgid "Block Padding"
+#~ msgstr "ブロックのパッド"
+
+#~ msgid "Background Overlay Opacity"
+#~ msgstr "背景のオーバーレイの透明度"
+
+#~ msgid "Tabs"
+#~ msgstr "タブレイアウト"
+
+#~ msgid "Tabs which can be switched by click"
+#~ msgstr "クリックによる切り替えが可能なタブ"
+
+#~ msgid "Tab 1"
+#~ msgstr "タブ１"
+
+#~ msgid "Tab 2"
+#~ msgstr "タブ２"
+
+#~ msgid "Showing Tabs in Edit Mode:"
+#~ msgstr "編集モードで表示させるタブ："
+
+#~ msgid "Showing Tabs"
+#~ msgstr "表示タブ"
+
+#~ msgid "Styles"
+#~ msgstr "スタイル"
+
+#~ msgid "Edit Mode of \"Chat Message Text\""
+#~ msgstr "チャットメッセージテキストの編集モード"
+
+#~ msgid "Please set the image for the chatting avatar."
+#~ msgstr "チャットアバター用イメージをセットしてください。"
+
+#~ msgid "Chat Block with Image."
+#~ msgstr "イメージ付きチャットブロック"
+
+#~ msgid "Chat Message Option"
+#~ msgstr "チャットメッセージオプション"
+
+#~ msgid "Registered Slider"
+#~ msgstr "登録済みスライダー"
+
+#~ msgid "Registered CPT Slider"
+#~ msgstr "登録済みCPTスライダー"
+
+#~ msgid "Use a registered slider."
+#~ msgstr "登録済みスライダーを使用する。"
+
+#~ msgid "Edit Mode of \"CTA Block\""
+#~ msgstr "CTAブロックの編集モード"
+
+#~ msgid "CTA Block."
+#~ msgstr "CTAブロック"
+
+#~ msgid "CTA Style"
+#~ msgstr "CTAスタイル"
+
+#~ msgid "Style 1"
+#~ msgstr "スタイル１"
+
+#~ msgid "Custom Post List with Main Query."
+#~ msgstr "メインクエリによるカスタム投稿一覧"
+
+#~ msgid "Display Type"
+#~ msgstr "表示タイプ"
+
+#~ msgid "Display Type."
+#~ msgstr "表示タイプ"
+
+#~ msgid "Custom Blog."
+#~ msgstr "カスタムブログ"
+
+#~ msgid "Edit Mode of \"Icon\""
+#~ msgstr "アイコンの編集モード"
+
+#~ msgid "Please set an Icon."
+#~ msgstr "アイコンをセットしてください。"
+
+#~ msgid "Icon Block."
+#~ msgstr "アイコンブロック"
+
+#~ msgid "Icon Size"
+#~ msgstr "アイコンサイズ"
+
+#~ msgid "Vertical Margin"
+#~ msgstr "縦の余白"
+
+#~ msgid "With Border"
+#~ msgstr "境界線有り"
+
+#~ msgid "Border Width"
+#~ msgstr "境界線の幅"
+
+#~ msgid "Border Padding"
+#~ msgstr "境界までのパッド"
+
+#~ msgid "Icon Color"
+#~ msgstr "アイコンの色"
+
+#~ msgid "\"Map Block\""
+#~ msgstr "マップブロック"
+
+#~ msgid "Please enter the Google API key for Map in setting page."
+#~ msgstr "設定ページにてGoogleマップのAPIキーを入力してください。"
+
+#~ msgid "Map"
+#~ msgstr "マップ"
+
+#~ msgid "Map Block."
+#~ msgstr "マップブロック"
+
+#~ msgid "Map Location Query"
+#~ msgstr "マップ位置のクエリ"
+
+#~ msgid "Post List"
+#~ msgstr "投稿一覧"
+
+#~ msgid "Style"
+#~ msgstr "スタイル"
+
+#~ msgid "Post Number"
+#~ msgstr "投稿数"
+
+#~ msgid "Post List."
+#~ msgstr "投稿リスト"
+
+#, fuzzy
+#~| msgid ""
+#~| "Setup Slider with slides which can contains block without slide widget. "
+#~| "You can nest the slider by putting slider in slide."
+#~ msgid ""
+#~ "Setup Slider with slides which can contains block except slide "
+#~ "components. You can nest the slider by putting slider in slide."
+#~ msgstr ""
+#~ "スライドコンポーネント以外のブロックを有するスライドで構成されたスライダー"
+#~ "です。スライド内にスライダーをセットすることでネスト化することが可能です。"
+
+#~ msgid "Slider Block."
+#~ msgstr "スライダーブロック"
+
+#~ msgid "Slider Max Width"
+#~ msgstr "最大幅スライダー"
+
+#~ msgid "General Options"
+#~ msgstr "一般設定"
+
+#~ msgid "Slider Style"
+#~ msgstr "スライダースタイル"
+
+#~ msgid "Slider Max Width ( % )"
+#~ msgstr "スライダーの最大幅（%）"
+
+#~ msgid "Slider Max Width ( px )"
+#~ msgstr "スライダーの最大幅（px）"
+
+#~ msgid "Measure for Max Width"
+#~ msgstr "最大幅の単位"
+
+#~ msgid "%"
+#~ msgstr "%"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Auto Play?"
+#~ msgstr "自動再生"
+
+#~ msgid "This makes the slider autoplay."
+#~ msgstr "スライダーを自動再生します。"
+
+#~ msgid "Slider Direction"
+#~ msgstr "スライダーの向き"
+
+#~ msgid "Sliding Speed"
+#~ msgstr "スライドスピード"
+
+#~ msgid "Slider Effect"
+#~ msgstr "スライド効果"
+
+#~ msgid "Cube"
+#~ msgstr "キューブ"
+
+#~ msgid "Coverflow"
+#~ msgstr "カバーフロー"
+
+#~ msgid "Slides Grid"
+#~ msgstr "スライドグリッド"
+
+#~ msgid "Space Between"
+#~ msgstr "間隔"
+
+#~ msgid "Slides Per View"
+#~ msgstr "表示されるスライド数"
+
+#~ msgid "Slides Per Column"
+#~ msgstr "カラム毎のスライド数"
+
+#~ msgid "Container"
+#~ msgstr "コンテナ"
+
+#~ msgid "Wrapper"
+#~ msgstr "ラッパー"
+
+#~ msgid "Images"
+#~ msgstr "画像"
+
+#~ msgid "Preload Images?"
+#~ msgstr "イメージをプリロード"
+
+#~ msgid "Loop"
+#~ msgstr "ループ"
+
+#~ msgid "Looped Slides"
+#~ msgstr "スープするスライド"
+
+#~ msgid "CTA Button"
+#~ msgstr "CTAボタン"
+
+#~ msgid "CTA Title"
+#~ msgstr "CTAタイトル"
+
+#~ msgid "The Author"
+#~ msgstr "著者"
+
+#~ msgid "Slider："
+#~ msgstr "スライダー："
+
+#~ msgid "Layered Color for Two Tone"
+#~ msgstr "ツートーン用のレイヤーカラー"
+
+#, fuzzy
+#~| msgid "Hide Title"
+#~ msgid "Children Title"
+#~ msgstr "タイトルを隠す"
+
+#, fuzzy
+#~| msgid "Site Description"
+#~ msgid "Children Description"
+#~ msgstr "サイト詳細"
+
+#, fuzzy
+#~| msgid "View %s"
+#~ msgid "View"
+#~ msgstr "%sを表示"
+
+#~ msgid "Oops! That page can&rsquo;t be found."
+#~ msgstr "ページが見つかりませんでした。"
+
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try one of the "
+#~ "links below or a search?"
+#~ msgstr ""
+#~ "何も見つかりませんでした。以下のリンクあるいは検索をお試しください。"
+
+#~ msgid "Most Used Categories"
+#~ msgstr "最も使用されるカテゴリー"
+
+#~ msgid "Try looking in the monthly archives. %1$s"
+#~ msgstr "月アーカイブをご覧ください。%1$s"
+
+#~ msgid "Comments are closed."
+#~ msgstr "コメントはクローズしています。"
+
+#~ msgid "Primary Menu"
+#~ msgstr "メインナビメニュー"
+
+#, fuzzy
+#~| msgctxt "Used between list items, there is a space after the comma."
+#~| msgid ", "
+#~ msgid ", "
+#~ msgstr ", "
+
+#, fuzzy
+#~| msgctxt "Used between list items, there is a space after the comma."
+#~| msgid ", "
+#~ msgctxt "list item separator"
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "結果検索： %s"
+
+#~ msgid "Nothing Found"
+#~ msgstr "何も見つかりませんでした。"
+
+#~ msgid "sub item"
+#~ msgstr "サブアイテム"
+
+#~ msgid "Title Attribute"
+#~ msgstr "タイトル属性"
+
+#~ msgid "Open link in a new tab"
+#~ msgstr "新タブでリンクを開く"
+
+#~ msgid "CSS Classes (optional)"
+#~ msgstr "CSSクラス（オプション）"
+
+#~ msgid "Is Search Box on Top Right"
+#~ msgstr "右上に検索ボックス"
+
+#~ msgid "Is Search Box on Top Right?"
+#~ msgstr "右上に検索ボックスを設置しますか？"
+
+#~ msgid "Font Families"
+#~ msgstr "フォントファミリー"
+
+#~ msgid ""
+#~ "Slidebar located on the left of the window. This widget area is NOT "
+#~ "Displayed in Mobile. When Theme Customizer Setting \"Is Responsive ON\" "
+#~ "is checked, You can pull the Slidebar in Responsive One Column Style "
+#~ "because of Narrower Window."
+#~ msgstr ""
+#~ "スライドバーはウィンドウの左側に位置します。このウィジェットエリアはモバイ"
+#~ "ル端末では表示されません。"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "抜粋を表示"
+
+#~ msgid "Make Width Size Maximized only if this page is of One-Column Layout."
+#~ msgstr "１カラムレイアウトのページの場合、最大幅にする"
+
+#~ msgid "Lazyload to read image files"
+#~ msgstr "イメージファイルの遅延化"
+
+#~ msgid "Image Source"
+#~ msgstr "イメージソース"
+
+#~ msgid "After Widget"
+#~ msgstr "ウィジェット後"
+
+#~ msgid "Before Widget Title"
+#~ msgstr "ウィジェットタイトル前"
+
+#~ msgid "After the Header"
+#~ msgstr "ヘッダーmのあと"

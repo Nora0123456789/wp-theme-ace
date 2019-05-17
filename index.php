@@ -1,0 +1,1 @@
+<?php get_header(); do_action( ace()->getPrefixedActionHook( 'render_content' ) ); get_footer();

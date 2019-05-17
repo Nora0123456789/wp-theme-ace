@@ -1,0 +1,32 @@
+
+= 1.0.7 =
+* Fixed theme customizer color settings.
+* Add a style for widget eu_cookie_law for header fixed on left.
+* Tweak the hook to setup theme mods.
+
+= 1.0.6 =
+* Tweak style for widget tag cloud ( hovered color ).
+* Tweak style for header menu item desc for layout fixed on left.
+
+= 1.0.5 =
+* Remove some plugin territories.
+
+= 1.0.4 =
+* Tweak the site description style for header fixed on left.
+
+= 1.0.3 =
+* Remove unused icons.
+* Add an admin theme page.
+* Add a link leading to a dedicated plugin in theme customizer.
+* Add a action hook "wp_body_open"
+
+= 1.0.2 =
+* fixed the Theme URI 
+* Changed the Screenshot
+
+= 1.0.1 =
+* Remove some parts.
+
+= 1.0.0 =
+* Released.
+
