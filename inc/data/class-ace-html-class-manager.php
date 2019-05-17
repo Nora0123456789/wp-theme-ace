@@ -117,7 +117,7 @@ class AceHTMLClassManager extends AceUniqueAbstract {
 		 * @param array  $params
 		 * @return bool
 		**/
-		protected function set_data $key, $params = array() )
+		protected function set_data( $key, $params = array() )
 		{
 
 			if ( ! is_string( $key )
