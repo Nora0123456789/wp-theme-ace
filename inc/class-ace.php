@@ -48,7 +48,7 @@ final class Ace {
 		 * @param string $key
 		 * @return mixed
 		 */
-		public function getThemeData $key )
+		public function getThemeData( $key )
 		{
 			if ( ! is_string( $key ) 
 				|| ! isset( $this->themeData[ $key ] )
@@ -501,7 +501,7 @@ final class Ace {
 		**/
 		public function sanitizeUniquePrefix( $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $prefix ) || empty( $prefix ) || ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Value or Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9]+/i', $sep, $prefix ) );
 		}
 
@@ -513,7 +513,7 @@ final class Ace {
 		**/
 		public function sanitizeInputNamePrefix( $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $prefix ) || empty( $prefix ) || ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Value or Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9\[\]]+/i', $sep, $prefix ) );
 		}
 
