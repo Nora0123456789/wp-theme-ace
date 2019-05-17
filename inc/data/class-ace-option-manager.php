@@ -93,7 +93,7 @@ class AceOptionManager extends AceUniqueAbstract {
 			'icons' => array(),
 		);
 
-		public static function getDefault( string $key )
+		public static function getDefault $key )
 		{
 			if ( '' === $key
 				|| ! isset( self::$defaults[ $key ] )
@@ -117,7 +117,7 @@ class AceOptionManager extends AceUniqueAbstract {
 			return $this->dataOptions;
 		}
 
-		public function getDataOption( string $key )
+		public function getDataOption $key )
 		{
 			if ( '' === $key
 				|| ! isset( $this->dataOptions[ $key ] )
@@ -151,7 +151,7 @@ class AceOptionManager extends AceUniqueAbstract {
 
 		}
 
-		public function getOption( string $key )
+		public function getOption $key )
 		{
 			if ( '' === $key
 				|| ! isset( $this->dataOptions[ $key ] )

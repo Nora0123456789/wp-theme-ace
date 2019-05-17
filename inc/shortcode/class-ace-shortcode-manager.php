@@ -53,7 +53,7 @@ class AceShortcodeManager extends AceUniqueAbstract {
          * @param string[] $shortcodes
          * @return bool
          */
-        public function didShortcode( string $shortcode )
+        public function didShortcode $shortcode )
         {
             if ( is_array( self::$usedSC ) && 0 >= count( self::$usedSC ) ) return false;
             if ( array_search( $shortcode, self::$usdeSC ) ) return true;
