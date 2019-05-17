@@ -15,7 +15,7 @@ class DataTest extends WP_UnitTestCase {
 	 */
 	public function test_data() {
 
-        
+		var_dump( ace()->getPrefixKey() );
 
     }
 
