@@ -501,7 +501,7 @@ final class Ace {
 		**/
 		public function sanitizeUniquePrefix( string $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $sep ) || empt( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9]+/i', $sep, $prefix ) );
 		}
 
@@ -513,7 +513,7 @@ final class Ace {
 		**/
 		public function sanitizeInputNamePrefix( string $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $sep ) || empt( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9\[\]]+/i', $sep, $prefix ) );
 		}
 
