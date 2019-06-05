@@ -18,8 +18,9 @@ Simple Theme with Customizable and Pluggable Design.
 
 == Changelog ==
 
-= 1.0.8 =
-* Fixed theme customizer color settings.
+= 1.0.9 =
+* Fixed Scritps.
+* Fixed Block styles.
 
 == Upgrade Notice ==
 
