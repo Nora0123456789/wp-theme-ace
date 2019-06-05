@@ -1,4 +1,7 @@
 
+= 1.0.8 =
+* Fixed theme customizer color settings.
+
 = 1.0.7 =
 * Fixed theme customizer color settings.
 * Add a style for widget eu_cookie_law for header fixed on left.
