@@ -18,8 +18,7 @@ Simple Theme with Customizable and Pluggable Design.
 
 == Changelog ==
 
-= 1.0.10 =
-* Fixed Script loading not for debug mode.
+= 1.0.11 =
 * Fixed Sanitizer
 
 == Upgrade Notice ==
