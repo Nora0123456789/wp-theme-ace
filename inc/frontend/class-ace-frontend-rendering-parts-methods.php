@@ -388,7 +388,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 										echo '<div class="author-related-post-header lazy-background" style="background-color: rgba(0,0,0,1)" data-src="' . esc_url( $thumbnail_url ) . '">';
 
-											echo '<a href="' . $permalink . '" class="author-related-post-cat-link">';
+											echo '<a href="'; the_permalink( $post_id ); echo '" class="author-related-post-cat-link">';
 												echo '<div class="author-related-post-cat">';
 													echo '<span class="author-related-post-cat-label">' . $cat_name . '</span>';
 												echo '</div>';
