@@ -21,7 +21,6 @@ Simple Theme with Customizable and Pluggable Design.
 = 1.0.10 =
 * Fixed Script loading not for debug mode.
 * Fixed Sanitizer
-* 
 
 == Upgrade Notice ==
 
