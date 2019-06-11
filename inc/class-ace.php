@@ -365,7 +365,6 @@ final class Ace {
 			require_once( ACE_DIR_PATH . 'inc/style/class-ace-style-manager.php' );
 
 			// Frontend
-			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-meta-tag-manager.php' );
 			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-rendering-parts-methods.php' );
 			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-rendering-methods.php' );
 			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-rendering-manager.php' );

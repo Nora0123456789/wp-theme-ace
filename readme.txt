@@ -18,9 +18,10 @@ Simple Theme with Customizable and Pluggable Design.
 
 == Changelog ==
 
-= 1.0.9 =
-* Fixed Scritps.
-* Fixed Block styles.
+= 1.0.10 =
+* Fixed Script loading not for debug mode.
+* Fixed Sanitizer
+* 
 
 == Upgrade Notice ==
 

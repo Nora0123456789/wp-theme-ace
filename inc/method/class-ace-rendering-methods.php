@@ -60,7 +60,7 @@ class AceRenderingMethods {
 							) {
 								continue;
 							}
-							$form .= '<select name="' . $key . '" placeholder="' . $field_label . '">';
+							$form .= '<select name="' . esc_attr( $key ) . '" placeholder="' . esc_attr( $field_label ) . '">';
 
 							foreach ( $form_data['choices'] as $value => $choice_label ) {
 								$form .= '<option value="' . $value . '">' . $choice_label . '</option>';
