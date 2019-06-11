@@ -11,7 +11,7 @@ echo '</p>';
 // Date Published
 echo '<p class="bloginfo-p bloginfo-p-time">';
     echo '<time class="dt-published published updated" datetime="'; the_time( 'c' ); echo '">';
-        the_time( esc_html_x( 'Y/m/d', 'Date Format', 'ace' ) );
+        the_time( 'Y/m/d' );
     echo '</time>';
 echo '</p>';
 
