@@ -7,9 +7,9 @@ echo '<div class="search-form-wrapper">';
 
             echo '<div class="search-inner hoverable running-underline">';
 
-                echo '<input name="s" type="text" class="search-box search-box-text-field" placeholder="' . __( 'Search', 'ace' ) . '" aria-label="' . __( 'Search Keywords', 'ace' ) . '">';
+                echo '<input name="s" type="text" class="search-box search-box-text-field" placeholder="' . esc_attr( __( 'Search', 'ace' ) ) . '" aria-label="' . esc_attr( __( 'Search Keywords', 'ace' ) ) . '">';
 
-                echo '<button class="search-button" aria-label="' . __( 'Search', 'ace' ) . '">';
+                echo '<button class="search-button" aria-label="' . esc_attr( __( 'Search', 'ace' ) ) . '">';
                     echo '<span class="nora-glyph circle arrow right"></span>';
                echo '</button>';
 
