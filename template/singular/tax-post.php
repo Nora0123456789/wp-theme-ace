@@ -42,7 +42,7 @@
 <div class="singular-after-title-inner article-date">
     <span class="label"><?php esc_html_e( 'Date', 'ace' ); ?></span>
     <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_time( 'c' ); ?>">
-        <?php the_time( esc_html_x( 'Y/m/d', 'Date Format', 'ace' ) ); ?>
+        <?php the_time( 'Y/m/d' ); ?>
     </time>
 </div>
 
