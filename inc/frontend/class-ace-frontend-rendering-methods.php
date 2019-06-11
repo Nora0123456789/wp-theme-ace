@@ -74,7 +74,7 @@ class AceFrontendRenderingMethods extends AceFrontendRenderingPartsMethods
 			{
 				$custom_search_classes = array( 'custom-search-trigger' );
 				if ( ! ace()->getThemeMod( 'is_search_on_top' ) ) array_push( $custom_search_classes, 'hidden' );
-				echo '<div class="' . implode( ' ', $custom_search_classes ) . '"><a class="custom-search-button" href="javascript:void(0);"><svg class="custom-search-icon"><use xlink:href="#iconSearch"></use></svg></a></div>';
+				echo '<div class="' . esc_attr( implode( ' ', $custom_search_classes ) ) . '"><a class="custom-search-button" href="javascript:void(0);"><svg class="custom-search-icon"><use xlink:href="#iconSearch"></use></svg></a></div>';
 			}
 
 			/**

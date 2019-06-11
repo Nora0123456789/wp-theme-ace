@@ -122,7 +122,7 @@ class AceWidgetAreaManager {
 					'class'         => $class_key,
 					'name'          => $swa_names[ $id ],
 					'description'   => $swa_descs[ $id ],
-					'before_widget' => '<li class="widget-li ' . $class_key . '"><div id="%s" class="' . $widget_class . '">',
+					'before_widget' => '<li class="widget-li ' . $class_key . '"><div id="%s" class="' . esc_attr( $widget_class ) . '">',
 					'after_widget'  => '</div></li>',
 					'before_title'  => '<div class="widget-title ' . $class_key . '"><span class="widget-title-text hoverable running-underline hover-text-shadow">',
 					'after_title'   => '</span></div>',
