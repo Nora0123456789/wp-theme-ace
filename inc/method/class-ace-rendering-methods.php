@@ -60,22 +60,22 @@ class AceRenderingMethods {
 							) {
 								continue;
 							}
-							$form .= '<select name="' . $key . '" placeholder="' . $field_label . '">';
+							$form .= '<select name="' . esc_attr( $key ) . '" placeholder="' . esc_attr( $field_label ) . '">';
 
 							foreach ( $form_data['choices'] as $value => $choice_label ) {
-								$form .= '<option value="' . $value . '">' . $choice_label . '</option>';
+								$form .= '<option value="' . esc_attr( $value ) . '">' . $choice_label . '</option>';
 							}
 
 							$form .= '</select>';
 							break;
 
 						case "checkbox":
-							$form .= '<input type="checkbox" name="' . $key . '" value="on" />';
+							$form .= '<input type="checkbox" name="' . esc_attr( $key ) . '" value="on" />';
 							break;
 
 						$format = '';
 						default:
-							$form .= '<input type="' . $field_type . '" name="' . $key . '" placeholder="' . $field_label . '" value="" />';
+							$form .= '<input type="' . esc_attr( $field_type ) . '" name="' . esc_attr( $key ) . '" placeholder="' . esc_attr( $field_label ) . '" value="" />';
 							break;
 
 					}
@@ -106,7 +106,7 @@ class AceRenderingMethods {
 		}
 		public static function getDefinedSVG( $svg_class, $xlink_id )
 		{
-			return '<svg class="' . $svg_class . '" viewBox="0 0 24 24"><use xlink:href="#' . $xlink_id . '"></use></svg>';
+			return '<svg class="' . esc_attr( $svg_class ) . '" viewBox="0 0 24 24"><use xlink:href="#' . $xlink_id . '"></use></svg>';
 		}
 
 		/**

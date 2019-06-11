@@ -13,7 +13,7 @@ do_action( ace()->getPrefixedActionHook( 'render_before_archive' ) );
 
 if ( have_posts() ) { 
 	$articles_class = array( 'articles', 'post-list', 'list-in-' . get_theme_mod( 'main_archive_article_type', 'card' ) );
-	echo '<div class="' . implode( ' ', $articles_class ) . '">';
+	echo '<div class="' . esc_attr( implode( ' ', $articles_class ) ) . '">';
 		while( have_posts() ) { the_post();
 			do_action( ace()->getPrefixedActionHook( 'render_archive_article' ) );
 		} 

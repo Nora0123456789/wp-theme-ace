@@ -75,9 +75,9 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 				if ( have_posts() ) { 
 					$article_container_class = array( 'article-container', 'swiper-container' );
-					echo '<div class="' . implode( ' ', $article_container_class ) . '">';
+					echo '<div class="' . esc_attr( implode( ' ', $article_container_class ) ) . '">';
 					$articles_class = array( 'articles', 'post-list', 'list-in-slider', 'swiper-wrapper' );
-					echo '<div class="' . implode( ' ', $articles_class ) . '">';
+					echo '<div class="' . esc_attr( implode( ' ', $articles_class ) ) . '">';
 						while( have_posts() ) { the_post();
 							do_action( ace()->getPrefixedActionHook( 'render_archive_article' ), $article_type );
 						} 
@@ -93,7 +93,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 			} else {
 				if ( have_posts() ) { 
 					$articles_class = array( 'articles', 'post-list', 'list-in-' . $article_type );
-					echo '<div class="' . implode( ' ', $articles_class ) . '">';
+					echo '<div class="' . esc_attr( implode( ' ', $articles_class ) ) . '">';
 						while( have_posts() ) { the_post();
 							do_action( ace()->getPrefixedActionHook( 'render_archive_article' ), $article_type );
 						} 
@@ -388,7 +388,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 										echo '<div class="author-related-post-header lazy-background" style="background-color: rgba(0,0,0,1)" data-src="' . esc_url( $thumbnail_url ) . '">';
 
-											echo '<a href="' . $permalink . '" class="author-related-post-cat-link">';
+											echo '<a href="'; the_permalink( $post_id ); echo '" class="author-related-post-cat-link">';
 												echo '<div class="author-related-post-cat">';
 													echo '<span class="author-related-post-cat-label">' . $cat_name . '</span>';
 												echo '</div>';
@@ -399,7 +399,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 										echo '<div class="author-related-post-body">';
 											echo '<time class="author-related-post-date dt-published published updated" datetime="'; the_time( 'c' ); echo '">' . $date . '</time>';
 											echo '<div class="author-related-post-title">';
-												echo '<a class="author-related-post-link" href="' . $permalink . '">' . $title . '</a>';
+												echo '<a class="author-related-post-link" href="'; the_permalink( $post_id ); echo '">' . $title . '</a>';
 											echo '</div>';
 										echo '</div>';
 

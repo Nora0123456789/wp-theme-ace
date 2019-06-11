@@ -1,4 +1,8 @@
 
+= 1.0.9 =
+* Fixed Scritps.
+* Fixed Block styles.
+
 = 1.0.8 =
 * Fixed theme customizer color settings.
 
