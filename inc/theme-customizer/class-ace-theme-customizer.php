@@ -260,15 +260,15 @@ class AceThemeCustomizer extends AceSanitizeMethods {
 				'afterPrimary'              => esc_html__( 'After Content Area', 'ace' ),
 				'inFooter'                  => esc_html__( 'In the Footer', 'ace' ),
 
-				'all'         => __( 'Copyright © <span id="copyright-year">%1$d</span> <span class="ace-footer-site-name">%2$s</span> All Rights Reserved.', 'ace' ),
-				'cc-by'       => __( 'CC-BY <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ),
-				'cc-by-sa'    => __( 'CC-BY-SA <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ),
-				'cc-by-nd'    => __( 'CC-BY-ND <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ),
-				'cc-by-nc'    => __( 'CC-BY-NC <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ),
-				'cc-by-nc-sa' => __( 'CC-BY-NC-SA <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ),
-				'cc-by-nc-nd' => __( 'CC-BY-NC-ND <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ),
-				'cc0'         => __( 'CC0 <span class="ace-footer-site-name">%1$s</span> No Rights Reserved.', 'ace' ),
-				'public'      => __( 'Public Domain <span class="ace-footer-site-name">%1$s</span> No Rights Reserved.', 'ace' )
+				'all'         => wp_kses( __( 'Copyright © <span id="copyright-year">%1$d</span> <span class="ace-footer-site-name">%2$s</span> All Rights Reserved.', 'ace' ), array( 'span' => array( 'id' => array(), 'class' => array() ) ) ),
+				'cc-by'       => wp_kses( __( 'CC-BY <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'cc-by-sa'    => wp_kses( __( 'CC-BY-SA <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'cc-by-nd'    => wp_kses( __( 'CC-BY-ND <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'cc-by-nc'    => wp_kses( __( 'CC-BY-NC <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'cc-by-nc-sa' => wp_kses( __( 'CC-BY-NC-SA <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'cc-by-nc-nd' => wp_kses( __( 'CC-BY-NC-ND <span class="ace-footer-site-name">%1$s</span> Some Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'cc0'         => wp_kses( __( 'CC0 <span class="ace-footer-site-name">%1$s</span> No Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) ),
+				'public'      => wp_kses( __( 'Public Domain <span class="ace-footer-site-name">%1$s</span> No Rights Reserved.', 'ace' ), array( 'span' => array( 'class' => array() ) ) )
 			);
 
 			// Theme Customizer

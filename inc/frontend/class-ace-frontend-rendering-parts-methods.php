@@ -229,7 +229,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				ob_start();
 
 				echo '<div class="bloginfo-p bloginfo-p-time">';
-					echo '<time class="dt-published published updated" datetime="'; the_time( 'c' ); echo '">';
+					echo '<time class="dt-published published updated" datetime="'; the_time(); echo '">';
 						the_time( 'Y/m/d' );
 					echo '</time>';
 				echo '</div
@@ -397,7 +397,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 										echo '</div>';
 
 										echo '<div class="author-related-post-body">';
-											echo '<time class="author-related-post-date dt-published published updated" datetime="'; the_time( 'c' ); echo '">' . $date . '</time>';
+											echo '<time class="author-related-post-date dt-published published updated" datetime="'; the_time(); echo '">' . $date . '</time>';
 											echo '<div class="author-related-post-title">';
 												echo '<a class="author-related-post-link" href="'; the_permalink( $post_id ); echo '">' . $title . '</a>';
 											echo '</div>';

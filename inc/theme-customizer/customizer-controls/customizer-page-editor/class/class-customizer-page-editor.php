@@ -51,7 +51,7 @@ class Customizer_Page_Editor extends WP_Customize_Control {
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 			<?php endif; ?>
 			<input type="hidden" <?php $this->link(); ?> value="<?php echo esc_textarea( $this->value() ); ?>" id="<?php echo esc_attr( $this->id ); ?>" class="editorfield">
-			<a onclick="javascript:WPEditorWidget.toggleEditor('<?php echo $this->id; ?>');" class="button edit-content-button"><?php _e( 'Edit', 'ace' ); ?></a>
+			<a onclick="javascript:WPEditorWidget.toggleEditor('<?php echo $this->id; ?>');" class="button edit-content-button"><?php esc_html_e( 'Edit', 'ace' ); ?></a>
 		</label>
 		<?php
 	}

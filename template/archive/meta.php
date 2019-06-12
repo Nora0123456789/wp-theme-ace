@@ -10,8 +10,8 @@ echo '</p>';
 
 // Date Published
 echo '<p class="bloginfo-p bloginfo-p-time">';
-    echo '<time class="dt-published published updated" datetime="'; the_time( 'c' ); echo '">';
-        the_time( 'Y/m/d' );
+    echo '<time class="dt-published published updated" datetime="'; the_time(); echo '">';
+        the_time();
     echo '</time>';
 echo '</p>';
 
