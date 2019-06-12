@@ -9,13 +9,13 @@ global $post;
 echo '<div class="breadcrumb-wrapper">';
 echo '<ul id="breadcrumb" class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 	
-	AceFrontendRenderingMethods::renderBreadcrumbItem( __( 'Home', 'ace' ), 'home', ACE_SITE_URL );
+	AceFrontendRenderingMethods::renderBreadcrumbItem( esc_html__( 'Home', 'ace' ), 'home', ACE_SITE_URL );
 
 	if ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
 
 		// Shop
 		if ( is_shop() ) {
-			AceFrontendRenderingMethods::renderBreadcrumbItem( __( 'Shop', 'ace' ), 'shop' );
+			AceFrontendRenderingMethods::renderBreadcrumbItem( esc_html__( 'Shop', 'ace' ), 'shop' );
 		}
 		// Product
 		elseif ( is_product() ) {

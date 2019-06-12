@@ -12,11 +12,11 @@ foreach ( $wp->query_vars as $key => $value ) {
 
 if ( have_posts() ) { while( have_posts() ) { the_post();
 
-	echo '<h1 class="woocommerce-my-account-title ' . $menu_key . '">' . _x( 'Your Account', 'WooCommerce Endpoint', 'ace' ) . '</h1>';
+	echo '<h1 class="woocommerce-my-account-title ' . $menu_key . '">' . esc_html_x( 'Your Account', 'WooCommerce Endpoint', 'ace' ) . '</h1>';
 
 	$titles = wp_parse_args( wc_get_account_menu_items(), array(
-		'view-order' => _x( 'Order Details', 'WC Account Page', 'ace' ),
-		'add-payment-method' => _x( 'Add Payment Method', 'WC Account Page', 'ace' ),
+		'view-order' => esc_html_x( 'Order Details', 'WC Account Page', 'ace' ),
+		'add-payment-method' => esc_html_x( 'Add Payment Method', 'WC Account Page', 'ace' ),
 	) );
 	$menu_title = isset( $titles[ $menu_key ] ) ? $titles[ $menu_key ] : $titles['dashboard'];
 

@@ -60,7 +60,7 @@ if ( post_password_required() ) { ?>
     $req = get_option( 'require_name_email' );
     $aria_req = ( $req ? ' aria-required="true"' : '' );
     $defaults = array(
-        'title_reply' => __( 'Leave a Comment', 'ace' ),
+        'title_reply' => esc_html__( 'Leave a Comment', 'ace' ),
         'comment_notes_before' => '',
         'fields' => array(
             'author' => '<p class="comment-form-author"><label for="author">' . ( $req ? '<span class="required">*</span>' : '' ) . esc_html__( 'Name', 'ace' ) . '</label><br />' .

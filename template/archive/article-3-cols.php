@@ -73,8 +73,8 @@ global $post;
                         </div>
 
                         <div class="archive-article-meta-inner article-date">
-                            <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_time( 'c' ); ?>">
-                                <?php the_time( 'Y/m/d' ); ?>
+                            <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_time(); ?>">
+                                <?php the_time(); ?>
                             </time>
                         </div>
 
