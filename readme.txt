@@ -18,8 +18,11 @@ Simple Theme with Customizable and Pluggable Design.
 
 == Changelog ==
 
-= 1.0.11 =
+= 1.0.12 =
 * Fixed Sanitizer
+* Fixed Date Format
+* Fixed Comment Condition.
+* Deleted doubled global variables where not needed
 
 == Upgrade Notice ==
 
