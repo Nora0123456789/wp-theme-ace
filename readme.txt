@@ -18,7 +18,7 @@ Simple Theme with Customizable and Pluggable Design.
 
 == Changelog ==
 
-= 1.0.13 =
+= 1.0.14 =
 * Fixed Date Format
 
 == Upgrade Notice ==

@@ -14,7 +14,7 @@ final class Ace {
 		 * Unique key to be used for prefixes
 		**/
 		const THEME_NAME       = 'Ace';
-		const VERSION          = '1.0.13';
+		const VERSION          = '1.0.14';
 		const UNIQUE_KEY       = 'ace';
 		const UPPER_UNIQUE_KEY = 'ACE';
 
