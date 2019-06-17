@@ -8,21 +8,18 @@ Stable Tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple Theme with Customizable and Pluggable Design. 
+Simple Theme with Customizable and Pluggable Design.
 
 
 == Description ==
 
-Simple Theme with Customizable and Pluggable Design. 
+Simple Theme with Customizable and Pluggable Design.
 
 
 == Changelog ==
 
-= 1.0.12 =
-* Fixed Sanitizer
+= 1.0.13 =
 * Fixed Date Format
-* Fixed Comment Condition.
-* Deleted doubled global variables where not needed
 
 == Upgrade Notice ==
 
