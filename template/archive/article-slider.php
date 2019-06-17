@@ -58,8 +58,8 @@ global $post;
 
                 <div class="archive-article-date-publish">
                     <div class="archive-article-date-publish-inner">
-                        <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_date(); ?>">
-                            <?php the_date(); ?>
+                        <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php echo esc_attr( get_the_date() ); ?>">
+                            <?php echo esc_html( get_the_date() ); ?>
                         </time>
                     </div>
                 </div>
