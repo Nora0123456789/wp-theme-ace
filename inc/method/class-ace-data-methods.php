@@ -48,42 +48,42 @@ class AceDataMethods {
 	#
 		/**
 		 * Get Modified Time
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $format
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getModifiedTime( $format ) {
 
 			// Modified Time
-			$mtime = get_the_modified_time( 'Ymd' ); 
+			$mtime = get_the_modified_time( 'Ymd' );
 
 			// Publish Time
 			$ptime = get_the_time( 'Ymd' );
 
 			// Not Modified ( Publish > Modified )
-			if ( $ptime > $mtime ) { 
+			if ( $ptime > $mtime ) {
 				return date_i18n( $format );
 			}
 			// Not Modified ( Publish = Modified )
-			elseif ( $ptime === $mtime ) { 
+			elseif ( $ptime === $mtime ) {
 				return date_i18n( $format );
 			}
 			// Modified ( Publish < Modified )
-			else { 
+			else {
 				return get_the_modified_time( $format );
 			}
 		}
 
 		/**
 		 * Get Post Format Name
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param WP_Post $post
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getPostFormatName( $post ) {
@@ -94,12 +94,12 @@ class AceDataMethods {
 
 		/**
 		 * Get Post Excerpt
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int    $excerpt_length
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getTheExcerpt( $post_content, $excerpt_length = 200 ) {
@@ -114,11 +114,11 @@ class AceDataMethods {
 
 
 	/**
-	 * 
+	 *
 	**/
 		/**
 		 * Print Template for License Display in Footer
-		 * 
+		 *
 		 * @see $this->get_footer_license_type()
 		**/
 		public static function footerLicenseType() {
@@ -127,7 +127,7 @@ class AceDataMethods {
 
 		/**
 		 * Get Template for License Display in Footer
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getFooterLicenseType() {
@@ -178,10 +178,10 @@ class AceDataMethods {
 	 */
 		/**
 		 * Get Excerpt From Post Content
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int    $excerpt_length
-		 * 
+		 *
 		 * @return string
 	    **/
 	  	public static function getCurrentUrlForSNS() {

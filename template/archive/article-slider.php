@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * An Article with theme customizer style Slider
 **/
@@ -18,7 +18,7 @@ global $post;
         $title = the_title( '', '', false );
         $title = ( ! empty( $title ) ? $title : esc_html__( '( No Title )', 'ace' ) );
         $excerpt = get_the_excerpt();
-    
+
     // Thumbnail
         $thumbnail_url = get_the_post_thumbnail_url( $post, 'archive-article-200' );
         if ( false === $thumbnail_url ) {
@@ -58,8 +58,8 @@ global $post;
 
                 <div class="archive-article-date-publish">
                     <div class="archive-article-date-publish-inner">
-                        <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_time(); ?>">
-                            <?php the_time(); ?>
+                        <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_date(); ?>">
+                            <?php the_date(); ?>
                         </time>
                     </div>
                 </div>
