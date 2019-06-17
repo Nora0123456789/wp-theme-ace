@@ -15,7 +15,7 @@
         $title = the_title( '', '', false );
         $title = ( ! empty( $title ) ? $title : esc_html__( '( No Title )', 'ace' ) );
         $excerpt = get_the_excerpt();
-    
+
     // Thumbnail
         $thumbnail_url = get_the_post_thumbnail_url( $post, 'archive-article-card' );
         if ( false === $thumbnail_url ) {
@@ -28,7 +28,7 @@
             'data-src' => $thumbnail_url,
             'alt'      => $title
         );
-        
+
 ?>
 <div class="singular-after-title-inner article-author">
     <span class="label"><?php esc_html_e( 'Author', 'ace' ); ?></span>
@@ -41,8 +41,8 @@
 
 <div class="singular-after-title-inner article-date">
     <span class="label"><?php esc_html_e( 'Date', 'ace' ); ?></span>
-    <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_time(); ?>">
-        <?php the_time(); ?>
+    <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_date(); ?>">
+        <?php the_date(); ?>
     </time>
 </div>
 

@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
  * Frontend
- * 
+ *
 **/
 class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
@@ -20,11 +20,11 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 	 * Header
 	**/
 		/**
-		 * Header Contact Info 
+		 * Header Contact Info
 		 */
 		public static function headerContactInfo()
 		{
-			
+
 			$header_contact_info_phone_number = ace()->getThemeMod( 'header_contact_info_phone_number' );
 			$header_contact_info_message_above_number = ace()->getThemeMod( 'header_contact_info_message_above_number' );
 			$header_contact_info_message_below_number = ace()->getThemeMod( 'header_contact_info_message_below_number' );
@@ -48,12 +48,12 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 			echo '</div>';
 		}
 
-		/** 
+		/**
 		 * Nav
 		**/
 		public static function headerNavi()
 		{
-			
+
 		}
 
 	/**
@@ -73,33 +73,33 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 			ob_start();
 			if ( in_array( $article_type, array( 'slider' ) ) ) {
 
-				if ( have_posts() ) { 
+				if ( have_posts() ) {
 					$article_container_class = array( 'article-container', 'swiper-container' );
 					echo '<div class="' . esc_attr( implode( ' ', $article_container_class ) ) . '">';
 					$articles_class = array( 'articles', 'post-list', 'list-in-slider', 'swiper-wrapper' );
 					echo '<div class="' . esc_attr( implode( ' ', $articles_class ) ) . '">';
 						while( have_posts() ) { the_post();
 							do_action( ace()->getPrefixedActionHook( 'render_archive_article' ), $article_type );
-						} 
+						}
 					echo '</div>';
 					echo '</div>';
 					do_action( ace()->getPrefixedActionHook( 'render_pagination' ) );
-				} else { 
+				} else {
 					echo '<h2 class="not-found-message">' . esc_html__( 'No Articles.', 'ace' ) . '</h3>';
 					echo '<p>' . esc_html__( 'Please try to search for the page with keywords.', 'ace' ) . '</p>';
 					get_search_form();
 				}
-				
+
 			} else {
-				if ( have_posts() ) { 
+				if ( have_posts() ) {
 					$articles_class = array( 'articles', 'post-list', 'list-in-' . $article_type );
 					echo '<div class="' . esc_attr( implode( ' ', $articles_class ) ) . '">';
 						while( have_posts() ) { the_post();
 							do_action( ace()->getPrefixedActionHook( 'render_archive_article' ), $article_type );
-						} 
+						}
 					echo '</div>';
 					do_action( ace()->getPrefixedActionHook( 'render_pagination' ) );
-				} else { 
+				} else {
 					echo '<h2 class="not-found-message">' . esc_html__( 'No Articles.', 'ace' ) . '</h3>';
 					echo '<p>' . esc_html__( 'Please try to search for the page with keywords.', 'ace' ) . '</p>';
 					get_search_form();
@@ -108,7 +108,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 			$blog_articles = ob_get_clean();
 			return $blog_articles;
-		
+
 		}
 
 		/**
@@ -153,13 +153,13 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 								$atts = array(
 									'class' => implode( ' ', $classes ),
 									'alt' => ( $alt ? $alt : sprintf( esc_html__( 'No Titles - %s', 'ace' ), ACE_SITE_NAME ) ),
-									'title' => ( 
+									'title' => (
 										$post_title !== ''
-										? $post_title 
-										: sprintf( 
-											esc_html__( 'No Titles - %s', 'ace' ), 
+										? $post_title
+										: sprintf(
+											esc_html__( 'No Titles - %s', 'ace' ),
 											esc_html( ACE_SITE_NAME )
-										) 
+										)
 									),
 								);
 								$width = absint( ace()->getThemeMod( 'archive_page_post_thumbnail_width' ) );
@@ -174,11 +174,11 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 								$classes = array( 'post-list-thumbnail', 'default' );
 								$default_cat_thumbnail = AceFrontendRenderingMethods::getTheDefaultThumbnailUrl( $post );
 
-								AceFrontendRenderingMethods::imgTagDefaultThumbnail( 
-									implode( ' ', $classes ), 
-									array( 
-										'width' => absint( ace()->getThemeMod( 'archive_page_post_thumbnail_width' ) ) . 'px', 
-										'height' => absint( ace()->getThemeMod( 'archive_page_post_thumbnail_height' ) ) . 'px' 
+								AceFrontendRenderingMethods::imgTagDefaultThumbnail(
+									implode( ' ', $classes ),
+									array(
+										'width' => absint( ace()->getThemeMod( 'archive_page_post_thumbnail_width' ) ) . 'px',
+										'height' => absint( ace()->getThemeMod( 'archive_page_post_thumbnail_height' ) ) . 'px'
 									),
 									$alt,
 									esc_url( $default_cat_thumbnail )
@@ -229,8 +229,8 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				ob_start();
 
 				echo '<div class="bloginfo-p bloginfo-p-time">';
-					echo '<time class="dt-published published updated" datetime="'; the_time(); echo '">';
-						the_time( 'Y/m/d' );
+					echo '<time class="dt-published published updated" datetime="'; the_date(); echo '">';
+						the_date();
 					echo '</time>';
 				echo '</div
 				>';
@@ -246,7 +246,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 		{
 
 			$author_desc = get_the_author_meta( 'user_description', $user_id );
-	
+
 			$user_url = get_author_posts_url( $user_id );
 			if ( function_exists( 'bp_core_get_user_domain' ) ) {
 				$user_url = bp_core_get_user_domain( $user_id );
@@ -281,8 +281,8 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 			// Belongs Data
 			$has_belongs_data = false;
-	
-			// Avatar 
+
+			// Avatar
 			$avatar_url = get_avatar_url( $user_id, array(
 				'size' => 100,
 				'default' => 'mystery',
@@ -301,8 +301,8 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				array_push( $card_classes, 'swiper-container-flip-y' );
 
 				//array_push( $card_inner_classes, 'swiper-wrapper' );
-			} 
-	
+			}
+
 			printf( '<div class="%1$s">', implode( ' ', $card_classes ) );
 
 				printf( '<div class="%1$s">', implode( ' ', $card_inner_classes ) );
@@ -355,7 +355,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 								echo '<div class="author-related-post-list swiper-wrapper">';
 								foreach ( $posts as $related_post ) {
 
-									// Post 
+									// Post
 									$post_id = absint( $related_post->ID );
 									$permalink = get_permalink( $post_id );
 
@@ -383,7 +383,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 										}
 										$thumbnail_size = apply_filters( ace_plus()->getPrefixedFilterHook( 'thumbnail_size' ), array( 160, 120 ), $related_post );
 										$view_box = sprintf( '0,0,%1$d,%2$d', absint( $thumbnail_size[0] ), absint( $thumbnail_size[1] ) );
-										
+
 									echo '<div class="author-related-post swiper-slide">';
 
 										echo '<div class="author-related-post-header lazy-background" style="background-color: rgba(0,0,0,1)" data-src="' . esc_url( $thumbnail_url ) . '">';
@@ -397,7 +397,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 										echo '</div>';
 
 										echo '<div class="author-related-post-body">';
-											echo '<time class="author-related-post-date dt-published published updated" datetime="'; the_time(); echo '">' . $date . '</time>';
+											echo '<time class="author-related-post-date dt-published published updated" datetime="'; the_date(); echo '">' . $date . '</time>';
 											echo '<div class="author-related-post-title">';
 												echo '<a class="author-related-post-link" href="'; the_permalink( $post_id ); echo '">' . $title . '</a>';
 											echo '</div>';
@@ -410,7 +410,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 								//echo '<div class="swiper-button-prev"></div>';
 								//echo '<div class="swiper-button-next"></div>';
-									
+
 								//echo '<div class="swiper-pagination-nested"><div class="swiper-pagination"></div></div>';
 							echo '</div>';
 						echo '</aside>';
@@ -439,7 +439,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 		/**
 		 * Print Pagination Template for Archive Page
-		 * 
+		 *
 		 * @see self::getPagination()
 		**/
 		public static function pagination() {
@@ -448,7 +448,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 		/**
 		 * Get Pagination Template for Archive Page
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getPagination( $args = array() ) {
@@ -456,16 +456,16 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 			if ( ! wp_is_mobile() ) {
 
 				global $wp_query;
-				$total = ( 
-					isset( $wp_query->max_num_pages ) 
-						&& $wp_query->max_num_pages > 1 
+				$total = (
+					isset( $wp_query->max_num_pages )
+						&& $wp_query->max_num_pages > 1
 					? $wp_query->max_num_pages
-					: 1 
+					: 1
 				);
 
-				$current = ( 
-					get_query_var( 'paged' ) 
-					? get_query_var( 'paged' ) 
+				$current = (
+					get_query_var( 'paged' )
+					? get_query_var( 'paged' )
 					: 1
 				);
 
@@ -484,7 +484,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				$prev = get_previous_posts_link( esc_html__( 'To Prev', 'ace' ) );
 				$next = get_next_posts_link( esc_html__( 'To Next', 'ace' ) );
 				if ( ! $prev && ! $next ) {
-					return apply_filters( 
+					return apply_filters(
 						ace()->getPrefixedFilterHook( 'render_pagination' ),
 						'',
 						'mobile'
@@ -497,7 +497,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 						$next = '<div class="next-posts-link-mobile">' . $next . '</div>' ;
 					}
 				}
-				return apply_filters( 
+				return apply_filters(
 					ace()->getPrefixedFilterHook( 'render_pagination' ),
 					'<div class="pagination">' . $prev . $next . '</div>',
 					'mobile'
@@ -532,8 +532,8 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 			$classes = array( 'singular-thumbnail' );
 			$post_title = wp_strip_all_tags( get_the_title( $post->ID ) );
 			$alt = $post_title = (
-				'' !== $post_title 
-				? $post_title 
+				'' !== $post_title
+				? $post_title
 				: sprintf( esc_html__( 'No Titles - %s', 'ace' ), esc_html( ACE_SITE_NAME ) )
 			);
 			$atts = array(
@@ -562,22 +562,22 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 		/**
 		 * Excerpt
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int $excerpt_length
-		 * 
+		 *
 		 * @see self::get_the_excerpt( $post_content, $excerpt_length )
 		**/
-		public static function theExcerpt( $post = null ) { 
+		public static function theExcerpt( $post = null ) {
 			echo self::getTheExcerpt( $post );
 		}
 
 		/**
 		 * Excerpt
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int $excerpt_length
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getTheExcerpt( $post = null ) {
@@ -602,22 +602,22 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 		/**
 		 * Excerpt
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int $excerpt_length
-		 * 
+		 *
 		 * @see self::get_the_excerpt( $post_content, $excerpt_length )
 		**/
-		public static function singularPostTax( $post = null ) { 
+		public static function singularPostTax( $post = null ) {
 			echo self::getSingularPostTax( $post );
 		}
 
 		/**
 		 * Excerpt
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int $excerpt_length
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getSingularPostTax( $post = null ) {
@@ -639,7 +639,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 		}
 
-		/** 
+		/**
 		 * Footer
 		**/
 		public static function singularFooterPrevNext()
@@ -685,7 +685,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				echo '<span class="footer-site-name-text">';
 					echo esc_html( ACE_SITE_NAME );
 				echo '</span>';
-			
+
 				echo '<span class="footer-site-description-text">';
 					echo esc_html( ACE_SITE_DESCRIPTION );
 				echo '</span>';
@@ -702,7 +702,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 		{
 			echo self::getFooterLicense();
 		}
-		
+
 		/**
 		 * Get Footer Description
 		**/
@@ -807,15 +807,15 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				'search' => array(
 					'xlink' => esc_attr( '#iconSearch' ),
 					'text' => esc_html__( 'Search', 'ace' ),
-				), 
+				),
 				'go-to-home' => array(
 					'xlink' => esc_attr( '#iconHome' ),
 					'text' => esc_html__( 'Home', 'ace' ),
-				), 
+				),
 				'scroll-to-top' => array(
 					'xlink' => esc_attr( '#iconChevronTop' ),
 					'text' => esc_html__( 'Top', 'ace' ),
-				), 
+				),
 				'right-menu' => array(
 					'xlink' => esc_attr( '#iconMenuDots' ),
 					'text' => esc_html__( 'Widgets', 'ace' ),
@@ -843,7 +843,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 		}
 
 		/**
-		 * 
+		 *
 		**/
 		public static function buttonWithIcon( $action, $xlink, $text, $atts = array() )
 		{
@@ -896,7 +896,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				// Images
 					/**
 					 * Return Matched Part
-					 * 
+					 *
 					 * @return string
 					 */
 					public static function filterImagesWithNoscript( $matched_img ) {
@@ -924,7 +924,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 									$attr_name = 'data-src';
 								}
 							}
-							if ( 'class' === $attr_name ) $attr_val .= ' lazy'; 
+							if ( 'class' === $attr_name ) $attr_val .= ' lazy';
 							$lazy_atts_str .= ' ' . $attr_name . '="' . esc_attr( $attr_val ) . '"';
 						}
 						//echo '<pre>' . $with_noscript . '</pre>';
@@ -932,14 +932,14 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 						return '<img ' . $lazy_atts_str . ' /><noscript>' . $with_noscript . '</noscript>';
 
 					}
-			
+
 		// Categories
 			/**
 			 * Widget Categories
-			 * 
+			 *
 			 * @param string $tags
 			 * @param array $args
-			 * 
+			 *
 			 * @return string $tag
 			**/
 			public static function filterDropdownCategories( $tags, $args ) {
@@ -953,10 +953,10 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 
 			/**
 			 * Widget Categories
-			 * 
+			 *
 			 * @param string $tags
 			 * @param array $args
-			 * 
+			 *
 			 * @return string $tag
 			**/
 			public static function filterListCategories( $tags, $args ) {
@@ -972,9 +972,9 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 		// Archives
 			/**
 			 * Widget Archive
-			 * 
+			 *
 			 * @param string $tags
-			 * 
+			 *
 			 * @return string $tag
 			**/
 			public static function filterArchivesLink( $link_html, $url, $text, $format, $before, $after ) {
@@ -990,10 +990,10 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 			public static function filterExcerptMore( $more ) {
 				return '...';
 			}
-	
-	
 
-			
+
+
+
 	/**
 	 * Widget Areas
 	 */
@@ -1018,7 +1018,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				$html = '<div class="slidebar-left-container slide-box standard">' . $slidebar_left . '</div>';
 
 				return apply_filters( ace()->getPrefixedFilterHook( 'render_slidebar_left' ), $html );
-				
+
 			}
 
 			public static function renderSlidebarRight()
@@ -1041,7 +1041,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				$html = '<div class="slidebar-right-container slide-box standard">' . $slidebar_right . '</div>';
 
 				return apply_filters( ace()->getPrefixedFilterHook( 'render_slidebar_right' ), $html );
-				
+
 			}
 
 		// Column Left
@@ -1068,7 +1068,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				$html = '<div class="column-left-container standard">' . $widget_areas . '</div>';
 
 				return apply_filters( ace()->getPrefixedFilterHook( 'render_column_left' ), $html );
-				
+
 			}
 
 		// Column Right
@@ -1095,7 +1095,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 				$html = '<div class="column-right-container standard">' . $widget_areas . '</div>';
 
 				return apply_filters( ace()->getPrefixedFilterHook( 'render_column_right' ), $html );
-				
+
 			}
 
 		// On Mobile Menu
