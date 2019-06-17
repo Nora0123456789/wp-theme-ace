@@ -395,7 +395,7 @@ final class Ace {
 					$main_style_file_handle = 'ace-mb-style-main';
 					$main_file_name = 'mobile';
 				}
-				$main_file_name .= '.min';
+				if ( ! defined( 'WP_DEBUG' ) || ! WP_DEBUG ) $main_file_name .= '.min';
 				$main_css_uri = esc_url( sprintf( ACE_DIR_URL . 'assets/css/frontend/%s.css', $main_file_name ) );
 				wp_register_style( $main_style_file_handle, $main_css_uri, array(), false, false );
 
@@ -409,7 +409,7 @@ final class Ace {
 					$main_file_handle = 'ace-mb-main';
 					$main_file_name = 'mb-main';
 				}
-				$main_file_name .= '.min';
+				if ( ! defined( 'WP_DEBUG' ) || ! WP_DEBUG ) $main_file_name .= '.min';
 				$main_js_uri = esc_url( sprintf( ACE_DIR_URL . 'assets/js/frontend/%s.js', $main_file_name ) );
 				wp_register_script( $main_file_handle, $main_js_uri, array(), false, false );
 
@@ -419,6 +419,7 @@ final class Ace {
 			do_action( ace()->getPrefixedActionHook( 'register_scripts' ) );
 
 		}
+
 
 		/**
 		 * Init classes
