@@ -107,7 +107,7 @@ if ( $theme_mods['is_nav_menu_fixed'] ) {
 }
 echo '<nav
 	aria-label="' . esc_attr( $either_primary_or_second ) . '"
-	class="' . implode( ' ', $nav_classes ) . '"
+	class="' . esc_attr( implode( ' ', $nav_classes ) ) . '"
 >';
 	echo '<div
 		id="ace-' . esc_attr( $either_main_or_mobile ) . '-nav-wrapper-div"

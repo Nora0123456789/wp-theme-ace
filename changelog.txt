@@ -1,3 +1,22 @@
+= 1.0.13 =
+* Fixed Date Format
+
+= 1.0.12 =
+* Fixed Sanitizer
+* Fixed Date Format
+* Fixed Comment Condition.
+* Deleted doubled global variables where not needed
+
+= 1.0.11 =
+* Fixed Sanitizer
+
+= 1.0.10 =
+* Fixed Script loading not for debug mode.
+* Fixed Sanitizer
+
+= 1.0.9 =
+* Fixed Scritps.
+* Fixed Block styles.
 
 = 1.0.8 =
 * Fixed theme customizer color settings.
@@ -24,7 +43,7 @@
 * Add a action hook "wp_body_open"
 
 = 1.0.2 =
-* fixed the Theme URI 
+* fixed the Theme URI
 * Changed the Screenshot
 
 = 1.0.1 =

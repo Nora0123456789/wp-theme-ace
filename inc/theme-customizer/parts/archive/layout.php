@@ -22,9 +22,9 @@ $wp_customize->add_section( 'section_main_archive_layout_style', array(
         'label' => esc_html__( 'Article Type', 'ace' ),
         'type' => 'select',
         'choices' => array(
-            'card' => __( 'Card', 'ace' ),
-            '3-cols' => __( '3 Cols', 'ace' ),
-            //'slider' => __( 'Slider', 'ace' )
+            'card' => esc_html__( 'Card', 'ace' ),
+            '3-cols' => esc_html__( '3 Cols', 'ace' ),
+            //'slider' => esc_html__( 'Slider', 'ace' )
         ),
     ));
 

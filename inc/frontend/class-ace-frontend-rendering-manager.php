@@ -293,13 +293,13 @@ class AceFrontendRenderingManager {
 						try {
 
 							if ( ! isset( $method_data ) || ! is_array( $method_data ) || 0 >= count( $method_data ) ) {
-								throw new Exception( __( 'Callable methods are not set.', 'ace' ) );
+								throw new Exception( esc_html__( 'Callable methods are not set.', 'ace' ) );
 							}
 
 							if ( ! is_callable( $method_data ) ) {
 								var_dump( $method_data );
 								throw new Exception( sprintf( 
-									__( '%1$s::%2$s is NOT callable!', 'ace' ),
+									esc_html__( '%1$s::%2$s is NOT callable!', 'ace' ),
 									$method_data[0],
 									$method_data[1]
 								) );

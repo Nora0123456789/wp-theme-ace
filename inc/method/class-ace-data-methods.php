@@ -48,42 +48,42 @@ class AceDataMethods {
 	#
 		/**
 		 * Get Modified Time
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $format
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getModifiedTime( $format ) {
 
 			// Modified Time
-			$mtime = get_the_modified_time( 'Ymd' ); 
+			$mtime = get_the_modified_time( 'Ymd' );
 
 			// Publish Time
 			$ptime = get_the_time( 'Ymd' );
 
 			// Not Modified ( Publish > Modified )
-			if ( $ptime > $mtime ) { 
+			if ( $ptime > $mtime ) {
 				return date_i18n( $format );
 			}
 			// Not Modified ( Publish = Modified )
-			elseif ( $ptime === $mtime ) { 
+			elseif ( $ptime === $mtime ) {
 				return date_i18n( $format );
 			}
 			// Modified ( Publish < Modified )
-			else { 
+			else {
 				return get_the_modified_time( $format );
 			}
 		}
 
 		/**
 		 * Get Post Format Name
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param WP_Post $post
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getPostFormatName( $post ) {
@@ -94,12 +94,12 @@ class AceDataMethods {
 
 		/**
 		 * Get Post Excerpt
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int    $excerpt_length
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getTheExcerpt( $post_content, $excerpt_length = 200 ) {
@@ -114,11 +114,11 @@ class AceDataMethods {
 
 
 	/**
-	 * 
+	 *
 	**/
 		/**
 		 * Print Template for License Display in Footer
-		 * 
+		 *
 		 * @see $this->get_footer_license_type()
 		**/
 		public static function footerLicenseType() {
@@ -127,7 +127,7 @@ class AceDataMethods {
 
 		/**
 		 * Get Template for License Display in Footer
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getFooterLicenseType() {
@@ -140,31 +140,31 @@ class AceDataMethods {
 				$return = '';
 			} elseif ( $type == 'all' ) {
 				$type = null;
-				$return = sprintf( __( 'Copyright &copy; <span id="copyright-year">%1$d</span> %2$s All Rights Reserved.', 'ace' ), $year, esc_html( ACE_SITE_NAME ) );
+				$return = wp_kses( sprintf( __( 'Copyright &copy; <span id="copyright-year">%1$d</span> %2$s All Rights Reserved.', 'ace' ), $year, esc_html( ACE_SITE_NAME ) ), array( 'span' => array( 'id' => array() ) ) );
 			} elseif ( $type == 'cc-by' ) {
 				$type = null;
-				$return = sprintf( __( 'CC-BY %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC-BY %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'cc-by-sa' ) {
 				$type = null;
-				$return = sprintf( __( 'CC-BY-SA %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC-BY-SA %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'cc-by-nd' ) {
 				$type = null;
-				$return = sprintf( __( 'CC-BY-ND %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC-BY-ND %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'cc-by-nc' ) {
 				$type = null;
-				$return = sprintf( __( 'CC-BY-NC %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC-BY-NC %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'cc-by-nc-sa' ) {
 				$type = null;
-				$return = sprintf( __( 'CC-BY-NC-SA %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC-BY-NC-SA %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'cc-by-nc-nd' ) {
 				$type = null;
-				$return = sprintf( __( 'CC-BY-NC-ND %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC-BY-NC-ND %s Some Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'cc0' ) {
 				$type = null;
-				$return = sprintf( __( 'CC0 %s No Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'CC0 %s No Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} elseif ( $type == 'public' ) {
 				$type = null;
-				$return = sprintf( __( 'Public Domain %s No Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
+				$return = sprintf( esc_html__( 'Public Domain %s No Rights Reserved.', 'ace' ), esc_html( ACE_SITE_NAME ) );
 			} else {
 				$return = '';
 			}
@@ -178,10 +178,10 @@ class AceDataMethods {
 	 */
 		/**
 		 * Get Excerpt From Post Content
-		 * 
+		 *
 		 * @param string $post_content
 		 * @param int    $excerpt_length
-		 * 
+		 *
 		 * @return string
 	    **/
 	  	public static function getCurrentUrlForSNS() {

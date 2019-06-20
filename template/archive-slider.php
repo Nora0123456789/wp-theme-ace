@@ -11,9 +11,9 @@ do_action( ace()->getPrefixedActionHook( 'render_before_archive' ) );
 
 if ( have_posts() ) { 
     $article_container_class = array( 'article-container', 'swiper-container' );
-    echo '<div class="' . implode( ' ', $article_container_class ) . '">';
+    echo '<div class="' . esc_attr( implode( ' ', $article_container_class ) ) . '">';
 	$articles_class = array( 'articles', 'post-list', 'list-in-slider', 'swiper-wrapper' );
-	echo '<div class="' . implode( ' ', $articles_class ) . '">';
+	echo '<div class="' . esc_attr( implode( ' ', $articles_class ) ) . '">';
 		while( have_posts() ) { the_post();
 			do_action( ace()->getPrefixedActionHook( 'render_archive_article' ) );
 		} 

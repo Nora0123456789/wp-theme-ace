@@ -27,7 +27,7 @@ function customizer_editor() {
 			);
 			wp_editor( '', 'wpeditorwidget', $settings );
 			?>
-			<p><a href="javascript:WPEditorWidget.updateWidgetAndCloseEditor(true);" class="button button-primary"><?php _e( 'Save and close', 'ace' ); ?></a></p>
+			<p><a href="javascript:WPEditorWidget.updateWidgetAndCloseEditor(true);" class="button button-primary"><?php esc_html_e( 'Save and close', 'ace' ); ?></a></p>
 		</div>
 	</div>
 	<?php

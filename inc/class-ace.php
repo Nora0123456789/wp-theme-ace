@@ -14,7 +14,7 @@ final class Ace {
 		 * Unique key to be used for prefixes
 		**/
 		const THEME_NAME       = 'Ace';
-		const VERSION          = '1.0.0';
+		const VERSION          = '1.0.14';
 		const UNIQUE_KEY       = 'ace';
 		const UPPER_UNIQUE_KEY = 'ACE';
 
@@ -27,14 +27,14 @@ final class Ace {
 	**/
 		/**
 		 * Admin
-		 * 
+		 *
 		 * @var $admin
 		**/
 		private static $instance;
 
 		public static $postFormats = array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' );
 
-	/** 
+	/**
 	 * Properties
 	**/
 		/**
@@ -50,7 +50,7 @@ final class Ace {
 		 */
 		public function getThemeData( $key )
 		{
-			if ( ! is_string( $key ) 
+			if ( ! is_string( $key )
 				|| ! isset( $this->themeData[ $key ] )
 			) {
 				return false;
@@ -274,9 +274,9 @@ final class Ace {
 	**/
 		/**
 		 * Public Initializer
-		 * 
+		 *
 		 * @uses self::$instance
-		 * 
+		 *
 		 * @return Ace
 		**/
 		public static function getInstance( $options = array() )
@@ -365,7 +365,6 @@ final class Ace {
 			require_once( ACE_DIR_PATH . 'inc/style/class-ace-style-manager.php' );
 
 			// Frontend
-			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-meta-tag-manager.php' );
 			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-rendering-parts-methods.php' );
 			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-rendering-methods.php' );
 			require_once( ACE_DIR_PATH . 'inc/frontend/class-ace-frontend-rendering-manager.php' );
@@ -388,7 +387,7 @@ final class Ace {
 
 			// Style
 				/**
-				 * 
+				 *
 				 */
 				$main_style_file_handle = 'ace-fe-style-main';
 				$main_file_name = 'frontend';
@@ -396,7 +395,7 @@ final class Ace {
 					$main_style_file_handle = 'ace-mb-style-main';
 					$main_file_name = 'mobile';
 				}
-				if ( ! defined( 'WP_DEBUG' ) || ! WP_DEBUG ) $main_file_name .= '.min';
+				$main_file_name .= '.min';
 				$main_css_uri = esc_url( sprintf( ACE_DIR_URL . 'assets/css/frontend/%s.css', $main_file_name ) );
 				wp_register_style( $main_style_file_handle, $main_css_uri, array(), false, false );
 
@@ -410,7 +409,7 @@ final class Ace {
 					$main_file_handle = 'ace-mb-main';
 					$main_file_name = 'mb-main';
 				}
-				if ( ! defined( 'WP_DEBUG' ) || ! WP_DEBUG ) $main_file_name .= '.min';
+				$main_file_name .= '.min';
 				$main_js_uri = esc_url( sprintf( ACE_DIR_URL . 'assets/js/frontend/%s.js', $main_file_name ) );
 				wp_register_script( $main_file_handle, $main_js_uri, array(), false, false );
 
@@ -421,12 +420,13 @@ final class Ace {
 
 		}
 
+
 		/**
 		 * Init classes
 		**/
 		private function initClasses()
 		{
-			
+
 			$this->themeModManager    = AceThemeModManager::getInstance();
 			$this->widgetAreaManager  = AceWidgetAreaManager::getInstance();
 			$this->styleManager       = AceStyleManager::getInstance();
@@ -448,7 +448,7 @@ final class Ace {
 		 * Register WP Support
 		**/
 		private function registerWPSupport()
-		{ 
+		{
 			/**
 			 * Add Theme Supports
 			**/
@@ -477,11 +477,11 @@ final class Ace {
 				add_image_size( 'ace-thumb100', 100, 100, true );
 				add_image_size( 'archive-article-200', 200, 200, true );
 				add_image_size( 'nav-menu-thumbnail', 240, 180, true );
-				
+
 			/**
 			 * Add Image Sizes
 			**/
-				register_nav_menus( 
+				register_nav_menus(
 					array(
 						'primary'   => esc_html__( 'Primary Navi Menu', 'ace' ),
 						'footer'    => esc_html__( 'Footer Navi Menu', 'ace' ),
@@ -501,7 +501,7 @@ final class Ace {
 		**/
 		public function sanitizeUniquePrefix( $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( esc_html__( 'Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9]+/i', $sep, $prefix ) );
 		}
 
@@ -513,7 +513,7 @@ final class Ace {
 		**/
 		public function sanitizeInputNamePrefix( $prefix, $sep = '_' )
 		{
-			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( __( 'Separator is not valid.', 'ace' ) );
+			if ( ! is_string( $sep ) || empty( $sep ) ) throw new Exception( esc_html__( 'Separator is not valid.', 'ace' ) );
 			return strtolower( preg_replace( '/[^a-zA-Z0-9\[\]]+/i', $sep, $prefix ) );
 		}
 

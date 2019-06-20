@@ -8,7 +8,7 @@
         $title = the_title( '', '', false );
         $title = ( ! empty( $title ) ? $title : esc_html__( '( No Title )', 'ace' ) );
         $excerpt = get_the_excerpt();
-    
+
     // Thumbnail
         $thumbnail_url = get_the_post_thumbnail_url( $post, 'archive-article-card' );
         if ( false === $thumbnail_url ) {
@@ -21,7 +21,7 @@
             'data-src' => $thumbnail_url,
             'alt'      => $title
         );
-        
+
 ?>
 <div>
 <?php if ( isset( $category[0] ) ) { $top_category_name = $category[0]->cat_name; ?>
@@ -40,8 +40,8 @@
 <?php } ?>
 
 <div class="archive-article-item-inner article-date">
-    <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php the_time( 'c' ); ?>">
-        <?php the_time( esc_html_x( 'Y/m/d', 'Date Format', 'ace' ) ); ?>
+    <time class="dt-published published updated hoverable hover-text-shadow" datetime="<?php echo esc_attr( get_the_date() ); ?>">
+        <?php echo esc_html( get_the_date() ); ?>
     </time>
 </div>
 <div class="archive-article-item-inner article-author">

@@ -44,7 +44,7 @@ function ace_version_check( $old_name, $old_theme ) {
 		
 		function shapeshifer_version_check_notices() {
 			echo '<div class="update-nag">';
-			printf( __( 'This theme requires PHP version 5.4.0. You are currently using %s.', 'ace' ), PHP_VERSION );
+			printf( esc_html__( 'This theme requires PHP version 5.4.0. You are currently using %s.', 'ace' ), PHP_VERSION );
 			echo '</div>';
 		}
 		add_action( 'admin_notices', 'shapeshifer_version_check_notices' );

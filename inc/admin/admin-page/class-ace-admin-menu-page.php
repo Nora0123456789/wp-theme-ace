@@ -108,7 +108,7 @@ class AceAdminPage extends AceUniqueAbstract {
 			if( !empty( $_REQUEST['settings-updated'] )
 				&& isset( $_REQUEST['page'] )
 				&& $_REQUEST['page'] === $this->menuSlug
-			) echo '<div class="updated"><p>' . __( 'Saved.', 'ace' ) . '</p></div>';
+			) echo '<div class="updated"><p>' . esc_html__( 'Saved.', 'ace' ) . '</p></div>';
 			
 		}
 

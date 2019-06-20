@@ -10,8 +10,8 @@ echo '</p>';
 
 // Date Published
 echo '<p class="bloginfo-p bloginfo-p-time">';
-    echo '<time class="dt-published published updated" datetime="'; the_time( 'c' ); echo '">';
-        the_time( esc_html_x( 'Y/m/d', 'Date Format', 'ace' ) );
+    echo '<time class="dt-published published updated" datetime="' . esc_attr( get_the_date() ) . '">';
+		echo esc_html( get_the_date() );
     echo '</time>';
 echo '</p>';
 

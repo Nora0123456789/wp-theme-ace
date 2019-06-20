@@ -1,4 +1,4 @@
-<?php global $post;
+<?php
 if ( have_posts() ) { while( have_posts() ) { the_post(); global $post;
 	echo '<article '; post_class( array( 'entry-content hentry' ) ); echo '>';
 		if ( has_action( ace()->getPrefixedActionHook( 'render_singular_header' ) ) ) {
@@ -19,15 +19,5 @@ if ( have_posts() ) { while( have_posts() ) { the_post(); global $post;
 			echo '</div>';
 		}
 	echo '</article>';
-
-	# Comments Pings
-	if ( is_singular() 
-        || is_page() 
-    ) { 
-        if ( comments_open( $post ) || get_comments_number() ) { 
-            comments_template(); 
-        } 
-    }
-
 
 } }
