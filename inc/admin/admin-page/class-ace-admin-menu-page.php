@@ -1,8 +1,8 @@
-<?php 
-if( ! defined( 'ABSPATH' ) ) exit; 
+<?php
+if( ! defined( 'ABSPATH' ) ) exit;
 
 /**
- * 
+ *
 **/
 class AceAdminPage extends AceUniqueAbstract {
 
@@ -45,7 +45,7 @@ class AceAdminPage extends AceUniqueAbstract {
 		protected $method = 'render';
 
 		/**
-		 * Form Template 
+		 * Form Template
 		 * @var string
 		**/
 		protected $formTemplate = 'view/admin-menu-page.php';
@@ -72,7 +72,7 @@ class AceAdminPage extends AceUniqueAbstract {
 			$this->initHooks();
 			do_action( ace()->getPrefixedActionHook( 'init_admin_menu_page' ), $this );
 		}
-		
+
 		/**
 		 * Init
 		**/
@@ -95,7 +95,7 @@ class AceAdminPage extends AceUniqueAbstract {
 		public function adminEnqueueScripts( $hook ) {
 
 			global $pagenow;
-			if ( isset( $pagenow ) && is_string( $pagenow ) && 'themes.php' === $pagenow 
+			if ( isset( $pagenow ) && is_string( $pagenow ) && 'themes.php' === $pagenow
 				&& isset( $_GET['page'] ) && is_string( $_GET['page'] ) && 'ace-admin' === $_GET['page']
 			) {
 				wp_enqueue_script( 'ace-admin-theme-page' );
@@ -104,12 +104,12 @@ class AceAdminPage extends AceUniqueAbstract {
 		}
 
 		function optionUpdateMessage() {
-			
+
 			if( !empty( $_REQUEST['settings-updated'] )
 				&& isset( $_REQUEST['page'] )
 				&& $_REQUEST['page'] === $this->menuSlug
 			) echo '<div class="updated"><p>' . esc_html__( 'Saved.', 'ace' ) . '</p></div>';
-			
+
 		}
 
 		public function adminMenu() {
@@ -130,7 +130,7 @@ class AceAdminPage extends AceUniqueAbstract {
 			}
 
 		}
-		
+
 		public function render() {
 
             if ( ! is_string( $this->formTemplate ) || '' === $this->formTemplate ) return;
@@ -145,7 +145,7 @@ class AceAdminPage extends AceUniqueAbstract {
 			$feed = fetch_feed( $uri );
 
 			$items = $feed->get_items( 0, 5 );
-			
+
 			if ( ! is_array( $items ) || 0 >= count( $items ) ) {
 				echo '<p class="admin-menu-page-notice no-feed-items">';
 					esc_html_e( 'No Posts', 'ace' );
@@ -154,7 +154,7 @@ class AceAdminPage extends AceUniqueAbstract {
 			}
 
 			echo '<div class="feed-wrapper">';
-				echo '<h2 class="feed-title">' . $title . '</h2>';
+				echo '<h2 class="feed-title">' . esc_html( wp_strip_all_tags( $title ) ) . '</h2>';
 				echo '<div class="feed-item-list">';
 					foreach ( $items as $item ) {
 						include( 'view/tab-menu-list/updates/feed-list-item.php' );
@@ -162,7 +162,7 @@ class AceAdminPage extends AceUniqueAbstract {
 					}
 				echo '</div>';
 			echo '</div>';
-			
+
 		}
 
 

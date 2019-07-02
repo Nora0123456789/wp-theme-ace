@@ -48,12 +48,12 @@ global $post;
                                     'alt' => $title,
                                     'width' => absint( $thumbnail_size[0] ),
                                     'height' => absint( $thumbnail_size[1] ),
-                                    'desc' => $excerpt,
+                                    'desc' => esc_html( wp_strip_all_tags( $excerpt ) ),
                                 ) );
                             ?>
 
                             <div class="hover-falling read-more clip-rhombus">
-                                <span>Read ?</span>
+                                <span><?php esc_html_e( 'Read ?', 'ace' ); ?></span>
                             </div>
 
                         </div>
@@ -62,13 +62,13 @@ global $post;
                     <div class="archive-article-meta">
                         <div class="archive-article-meta-inner article-title">
                             <h2 class="article-title hoverable hover-text-shadow running-underline">
-                                <span class="article-title-text"><?php echo $title; ?></span>
+                                <span class="article-title-text"><?php echo esc_html( wp_strip_all_tags( $title ) ); ?></span>
                             </h2>
                         </div>
 
                         <div class="archive-article-meta-inner article-excerpt">
                             <div class="hoverable hover-text-shadow">
-                                <p class="archive-article-excerpt"><?php echo $excerpt; ?></p>
+                                <p class="archive-article-excerpt"><?php echo esc_html( wp_strip_all_tags( $excerpt ) ); ?></p>
                             </div>
                         </div>
 

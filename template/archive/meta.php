@@ -43,7 +43,7 @@ echo '<div class="bloginfo-excerpt entry-summary">';
     } else {
         $excerpt = $post->post_content;
     }
-    do_action( ace()->getPrefixedActionHook( 'the_excerpt' ), $excerpt, $excerpt_length );
+    do_action( ace()->getPrefixedActionHook( 'the_excerpt' ), esc_html( wp_strip_all_tags( $excerpt ) ), $excerpt_length );
     unset( $excerpt, $excerpt_length );
 
     echo '<a class="button read-article" href="'; the_permalink(); echo '">';

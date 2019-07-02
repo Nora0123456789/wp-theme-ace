@@ -41,7 +41,7 @@ global $post;
                                 'alt' => $title,
                                 'width' => absint( $thumbnail_size[0] ),
                                 'height' => absint( $thumbnail_size[1] ),
-                                'desc' => $excerpt,
+                                'desc' => esc_html( wp_strip_all_tags( $excerpt ) ),
                             ) );
                         ?>
                     </a>
@@ -49,7 +49,7 @@ global $post;
                         <div class="archive-article-thumbnail-label article-category">
                             <a href="<?php echo esc_url( get_category_link( $category[0] ) ); ?>">
                                 <span class="category">
-                                    <?php echo $top_category_name; ?>
+                                    <?php echo esc_html( wp_strip_all_tags( $top_category_name ) ); ?>
                                 </span>
                             </a>
                         </div>
@@ -72,13 +72,13 @@ global $post;
                 <div class="archive-article-item-meta article-title">
                     <h2 class="article-title">
                         <a class="archive-article-link" href="<?php the_permalink(); ?>">
-                            <span class="article-title-text"><?php echo $title; ?></span>
+                            <span class="article-title-text"><?php echo esc_html( wp_strip_all_tags( $title ) ); ?></span>
                         </a>
                     </h2>
                 </div>
                 <div class="archive-article-item-meta article-excerpt">
                     <div class="hoverable hover-text-shadow">
-                        <p class="archive-article-excerpt"><?php echo $excerpt; ?></p>
+                        <p class="archive-article-excerpt"><?php echo esc_html( wp_strip_all_tags( $excerpt ) ); ?></p>
                     </div>
                 </div>
 
