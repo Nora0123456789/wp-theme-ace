@@ -310,7 +310,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 					echo '<div class="author-card-profile-side swiper-slide">';
 
 						echo '<div class="author-card-header">';
-							echo '<' . $title_element . ' class="author-card-title">';
+							echo '<' . esc_attr( $title_element ) . ' class="author-card-title">';
 								echo '<span class="author-card-title-text">';
 									echo esc_html( $display_name );
 								echo '</span>';
@@ -327,7 +327,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 									}
 								echo '</span>';
 
-							echo '</' . $title_element . '>';
+							echo '</' . esc_attr( $title_element ) . '>';
 						echo '</div>';
 
 						echo '<div class="author-card-body">';
@@ -399,7 +399,7 @@ class AceFrontendRenderingPartsMethods extends AceRenderingMethods {
 										echo '<div class="author-related-post-body">';
 											echo '<time class="author-related-post-date dt-published published updated" datetime="' . esc_attr( get_the_date() ) . '">' . $date . '</time>';
 											echo '<div class="author-related-post-title">';
-												echo '<a class="author-related-post-link" href="'; the_permalink( $post_id ); echo '">' . $title . '</a>';
+												echo '<a class="author-related-post-link" href="'; the_permalink( $post_id ); echo '">' . esc_html( wp_strip_all_tags( $title ) ) . '</a>';
 											echo '</div>';
 										echo '</div>';
 

@@ -7,10 +7,10 @@ if ( is_front_page() ) {
 	$title_el = 'h2';
 }
 echo '<div class="woocommerce-header">';
-	echo '<' . $title_el . ' class="singular-title">';
+	echo '<' . esc_attr( $title_el ) . ' class="singular-title">';
 		echo '<span class="p-name entry-title singular-title-text">';
 			esc_html( $post->post_title );
 		echo '</span>';
-	echo '</' . $title_el . '>';
+	echo '</' . esc_attr( $title_el ) . '>';
 echo '</div>';
 

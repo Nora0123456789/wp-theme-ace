@@ -18,8 +18,8 @@ Simple Theme with Customizable and Pluggable Design.
 
 == Changelog ==
 
-= 1.0.14 =
-* Fixed Date Format
+= 1.0.15 =
+* Fixed some sanitizers.
 
 == Upgrade Notice ==
 
