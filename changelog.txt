@@ -1,4 +1,7 @@
 
+= 1.0.15 =
+* Fixed some sanitizers.
+
 = 1.0.14 =
 * Fixed Date Format
 
