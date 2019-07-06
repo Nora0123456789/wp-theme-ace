@@ -19,7 +19,10 @@ Simple Theme with Customizable and Pluggable Design.
 == Changelog ==
 
 = 1.0.16 =
-* Remove Theme URI.
+* Removed Theme URI.
+* Resized the screenshot.
+* Removed Unused Codes and files.
+
 
 == Upgrade Notice ==
 

@@ -5,7 +5,7 @@
 class AceRenderingMethods {
 
 	/**
-	 * 
+	 *
 	**/
 		public static function getNoImageSrc() {
 			return ACE_DIR_URL . 'assets/img/no-img-dark.png';
@@ -22,74 +22,6 @@ class AceRenderingMethods {
 			$name = apply_filters( ace()->getPrefixedFilterHook( 'template_name' ), $name, $template );
 			$template = apply_filters( ace()->getPrefixedFilterHook( 'template' ), array( 'template', $template ) );
 			get_template_part( implode( '/', $template ), $name );
-		}
-	
-	/**
-	 * Forms
-	**/
-		/**
-		 * 
-		**/
-		public static function renderCustomSearchForm( $post_types, $custom_search_fields )
-		{
-
-			$form = '<form class="custom-search-form" action="' . esc_url( get_site_url() ) . '" method="get">';
-
-				// Post Types
-				if ( is_array( $post_types ) ) {
-					$post_types_json = json_encode( $post_types );
-				} else if ( is_string( $post_types ) ) {
-					$post_types_json = $post_types;
-				}
-				$form .= '<input type="hidden" name="post_types" value="' . esc_attr( $post_types_json ) . '">';
-
-				// Others
-				foreach ( $custom_search_fields as $key => $form_data ) {
-
-					$accepted_type = array( 'text', 'number', 'range', 'checkbox' );
-
-					$field_type = $form_data['type'];
-					$field_label = $form_data['label'];
-
-					switch( $field_type ) {
-
-						case "select":
-							if ( ! isset( $form_data['choices'] )
-								|| ! is_array( $form_data['choices'] )
-								|| 0 >= count( $form_data['choices'] )
-							) {
-								continue;
-							}
-							$form .= '<select name="' . esc_attr( $key ) . '" placeholder="' . esc_attr( $field_label ) . '">';
-
-							foreach ( $form_data['choices'] as $value => $choice_label ) {
-								$form .= '<option value="' . esc_attr( $value ) . '">' . $choice_label . '</option>';
-							}
-
-							$form .= '</select>';
-							break;
-
-						case "checkbox":
-							$form .= '<input type="checkbox" name="' . esc_attr( $key ) . '" value="on" />';
-							break;
-
-						$format = '';
-						default:
-							$form .= '<input type="' . esc_attr( $field_type ) . '" name="' . esc_attr( $key ) . '" placeholder="' . esc_attr( $field_label ) . '" value="" />';
-							break;
-
-					}
-
-				}
-
-				$form .= '<input type="text" name="s" class="regular-text" placeholder="' . esc_attr__( 'Keyword', 'ace' ) . '">';
-				
-				$form .= '<input type="submit" name="custom_search_button" class="button" value="' . esc_attr__( 'Search', 'ace' ) . '">';
-
-			$form .= '</form>';
-
-			return $form;
-
 		}
 
 	#
@@ -111,14 +43,14 @@ class AceRenderingMethods {
 
 		/**
 		 * Print General Element Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $element
 		 * @param string $atts
 		 * @param string $text
 		 * @param string $wrap
-		 * 
+		 *
 		 * @see self::getGeneratedTag( $element, $atts, $text, $wrap )
 		**/
 		public static function generatedTag( $element, $atts = array(), $text = '', $wrap = false ) {
@@ -127,14 +59,14 @@ class AceRenderingMethods {
 
 		/**
 		 * Get General Element Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $element
 		 * @param string $atts
 		 * @param string $text
 		 * @param string $wrap
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getGeneratedTag( $element, $atts = array(), $text = '', $wrap = false ) {
@@ -154,13 +86,13 @@ class AceRenderingMethods {
 	#
 		/**
 		 * Get Image Tag with Alternative Noscript Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $src
 		 * @param string $type
 		 * @param []     $atts
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getImageTagWithNoScript( $src, $type = 'img', $atts = array() ) {
@@ -191,11 +123,11 @@ class AceRenderingMethods {
 
 		/**
 		 * Print Default Post Thumbnail URL
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param WP_Post $post
-		 * 
+		 *
 		 * @see self::getGeneratedTag( $element, $atts, $text, $wrap )
 		**/
 		public static function theDefaultThumbnailUrl( $post ) {
@@ -204,11 +136,11 @@ class AceRenderingMethods {
 
 		/**
 		 * Get Default Post Thumbnail URL
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param WP_Post $post
-		 * 
+		 *
 		 * @return string $url
 		**/
 		public static function getTheDefaultThumbnailUrl( $post ) {
@@ -223,7 +155,7 @@ class AceRenderingMethods {
 
 			$default_cat_thumbnail = esc_url( apply_filters( ace()->getPrefixedFilterHook( 'defualt_thumbnail_url_before_set_theme_mod_value' ), $default_cat_thumbnail, $post ) );
 
-			return esc_url( 
+			return esc_url(
 				$default_cat_thumbnail != ''
 				? $default_cat_thumbnail
 				: get_theme_mod( 'default_thumbnail_image', ACE_DIR_URL . 'img/no-img.png' )
@@ -233,14 +165,14 @@ class AceRenderingMethods {
 
 		/**
 		 * Print Default Post Thumbnail in Div Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $class
 		 * @param array $size
 		 * 		'width' => "{$int}px",
 		 * 		'height' => "{$int}px",
-		 * 
+		 *
 		 * @see self::getDivTagDefaultThumbnail( $class, $size )
 		**/
 		public static function divTagDefaultThumbnail( $class = 'default-post-thumbnail', $size = array( 'width' => '80px', 'height' => '80px' ) ) {
@@ -249,25 +181,25 @@ class AceRenderingMethods {
 
 		/**
 		 * Get Default Post Thumbnail in Div Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $class                  : Default "default-post-thumbnail"
 		 * @param array  $size                   : Default
 		 * 		'width' => "{$int}px",
 		 * 		'height' => "{$int}px",
 		 * @param string $optional_def_image_url : Default ""
-		 * 
+		 *
 		 * @see self::getGeneratedTag( $element, $atts = array(), $text = '', $wrap = false )
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getDivTagDefaultThumbnail( $class = 'default-post-thumbnail', $size = array( 'width' => '80px', 'height' => '80px' ), $optional_def_image_url = '' ) {
 
 			// カスタマイザーでデフォルトを設定している場合
-			$default_thumbnail_url = esc_url( 
-				$optional_def_image_url 
-				? $optional_def_image_url 
+			$default_thumbnail_url = esc_url(
+				$optional_def_image_url
+				? $optional_def_image_url
 				: getThemeMod( 'default_thumbnail_image', '' )
 			);
 
@@ -283,14 +215,14 @@ class AceRenderingMethods {
 
 		/**
 		 * Print Default Thumbnail IMG Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $class
 		 * @param array $size
 		 * 		'width' => "{$int}px",
 		 * 		'height' => "{$int}px",
-		 * 
+		 *
 		 * @see self::getImgTagDefaultThumbnail( $class, $size, $alt )
 		**/
 		public static function imgTagDefaultThumbnail( $class = 'default-post-thumbnail', $size = array( 'width' => 80, 'height' => 80 ), $alt = '' ) {
@@ -299,23 +231,23 @@ class AceRenderingMethods {
 
 		/**
 		 * Get Default Thumbnail IMG Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param string $class
 		 * @param array $size
 		 * 		'width' => "{$int}px",
 		 * 		'height' => "{$int}px",
-		 * 
+		 *
 		 * @see self::getGeneratedTag( $element, $atts = array(), $text = '', $wrap = false )
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getImgTagDefaultThumbnail( $class = 'default-post-thumbnail', $size = array( 'width' => 80, 'height' => 80 ), $alt = '', $optional_def_image_url = '' ) {
 
-			$default_thumbnail_url = esc_url( 
-				$optional_def_image_url 
-				? $optional_def_image_url 
+			$default_thumbnail_url = esc_url(
+				$optional_def_image_url
+				? $optional_def_image_url
 				: get_theme_mod( 'default_thumbnail_image', ACE_DIR_URL . 'img/no-img.png' )
 			);
 
@@ -334,15 +266,15 @@ class AceRenderingMethods {
 
 		/**
 		 * Print Image in Div
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param int $post_id
 		 * @param string $class
 		 * @param array $size
 		 * 		'width' => "{$int}px",
 		 * 		'height' => "{$int}px",
-		 * 
+		 *
 		 * @see self::getDivTagPostThumbnail( $post_id, $class, $size )
 		**/
 		public static function divTagPostThumbnail( $post_id, $div_class = 'post-thumbnail', $size = array( 'width' => '80px', 'height' => '80px' ) ) {
@@ -351,17 +283,17 @@ class AceRenderingMethods {
 
 		/**
 		 * Get Default Thumbnail IMG Tag
-		 * 
+		 *
 		 * @static
-		 * 
+		 *
 		 * @param int $post_id
 		 * @param string $class
 		 * @param array $size
 		 * 		'width' => "{$int}px",
 		 * 		'height' => "{$int}px",
-		 * 
+		 *
 		 * @see self::getGeneratedTag( $element, $atts = array(), $text = '', $wrap = false )
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getDivTagPostThumbnail( $post_id, $div_class = 'post-thumbnail', $size = array( 'width' => '80px', 'height' => '80px' ) ) {
@@ -396,7 +328,7 @@ class AceRenderingMethods {
 			echo '<li class="breadcrumb-item ' . $type . '" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 
 				if ( is_string( $url ) && '' !== $url ) echo '<a class="breadcrumb-link" href="' . esc_url( $url ) . '" itemprop="url">';
-				
+
 					echo '<span class="breadcrumb-link-text" itemprop="title">';
 						echo esc_html( $label );
 					echo '</span>';
@@ -413,10 +345,10 @@ class AceRenderingMethods {
 	**/
 		/**
 		 * Edit Shortcut for Theme Customizer
-		 * 
+		 *
 		 * @param string $setting_id
 		 * @param string $label
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function editorShortcutForThemeCustomizer( $setting_id, $label = '' ) {
@@ -427,10 +359,10 @@ class AceRenderingMethods {
 
 		/**
 		 * Edit Shortcut for Theme Customizer
-		 * 
+		 *
 		 * @param string $setting_id
 		 * @param string $label
-		 * 
+		 *
 		 * @return string
 		**/
 		public static function getEditorShortcutForThemeCustomizer( $setting_id, $label = '' ) {
